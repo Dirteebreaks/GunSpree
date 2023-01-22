@@ -1,9 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable type="TeamId" id="q`3:v^v4DX`dM1p/FtL`">Players</variable>
-    <variable type="Player" id="`_T#`8,K3fT{3b2s4X0}">OtherTeamID</variable>
-    <variable type="Player" id="u;kES7bK)79q$Hb9q1fo">Position</variable>
-    <variable type="Player" id="mg)yD}9;RlN,XJ}fUJ`A">MenuSelection</variable>
     <variable type="Global" id="@ri8LTnaOMwG.xB{)|1C">i</variable>
     <variable type="Global" id="[oGsBht8(8}`0Q`)isqv">GamemodeStarted</variable>
     <variable type="Global" id="aTny_}/+$c(vM,_Fs{#W">RoundStarted</variable>
@@ -30,6 +27,18 @@
     <variable type="Global" id="5?T#X8C=ne$*)iSu.kAx">SpecialWeapons</variable>
     <variable type="Global" id="fGTN3lb)7:A/;VY55G=9">SecondaryWeapons</variable>
     <variable type="Global" id="|.gc)T{c77FAhpoAfP19">Throwables</variable>
+    <variable type="Player" id="`_T#`8,K3fT{3b2s4X0}">OtherTeamID</variable>
+    <variable type="Player" id="u;kES7bK)79q$Hb9q1fo">Position</variable>
+    <variable type="Player" id="mg)yD}9;RlN,XJ}fUJ`A">MenuSelection</variable>
+    <variable type="Player" id=":e`ytB|f?a$=[eX(`zgl">PrimarySelection</variable>
+    <variable type="Player" id="y=@%5%2Y4qf|AYC|pE3l">AssaultSelection</variable>
+    <variable type="Player" id="AmPA`cD^zG[64hl,j_Rq">ShotgunSelection</variable>
+    <variable type="Player" id="m4b2lNw=[(7r2E(UGR;_">LMGSelection</variable>
+    <variable type="Player" id=";Su?EQ]lxE{zZnE~!~8p">DMRSelection</variable>
+    <variable type="Player" id="[E_kf.Q(Dl=5!LfH7z5+">SniperSelection</variable>
+    <variable type="Player" id=",EhUF|yj/clxoP^hPM|v">GadgetSelection</variable>
+    <variable type="Player" id="KJ$:)qM4{pg`xj_f5f)H">SMGSelection</variable>
+    <variable type="Player" id=":#kvvk+6:07Ib{KbQ1:`">ThrowableSelection</variable>
   </variables>
   <block type="subroutineBlock" deletable="false" x="539" y="-832">
     <field name="SUBROUTINE_NAME">assign_teams</field>
@@ -1600,7 +1609,7 @@
                 <next>
                   <block type="If">
                     <value name="VALUE-0">
-                      <block type="GreaterThan">
+                      <block type="GreaterThan" inline="false">
                         <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
@@ -2338,10 +2347,6 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="SecondaryWeaponsItem" x="-679" y="471">
-    <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-    <field name="VALUE-1">MP443_ALX</field>
   </block>
   <block type="subroutineBlock" deletable="false" x="-3483" y="718">
     <field name="SUBROUTINE_NAME">create_weapons_list</field>
@@ -4923,10 +4928,6 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="ThrowablesItem" x="-667" y="623">
-    <field name="VALUE-0">ThrowablesKingston</field>
-    <field name="VALUE-1">IncendiaryGrenade</field>
   </block>
   <block type="subroutineBlock" deletable="false" x="3191" y="772">
     <field name="SUBROUTINE_NAME">menu_display</field>
