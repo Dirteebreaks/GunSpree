@@ -1541,7 +1541,7 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="3209" y="-393">
+  <block type="subroutineBlock" deletable="false" x="3305" y="-283">
     <field name="SUBROUTINE_NAME">menu_cycle</field>
     <statement name="ACTIONS">
       <block type="While">
@@ -1609,7 +1609,7 @@
                 <next>
                   <block type="If">
                     <value name="VALUE-0">
-                      <block type="GreaterThan" inline="false">
+                      <block type="GreaterThanEqualTo" inline="false">
                         <value name="VALUE-0">
                           <block type="GetVariable">
                             <value name="VALUE-0">
@@ -1625,25 +1625,16 @@
                           </block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="Subtract">
+                          <block type="CountOf">
                             <value name="VALUE-0">
-                              <block type="CountOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
-                                      </block>
-                                    </value>
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="false"></mutation>
+                                    <field name="OBJECTTYPE">Global</field>
+                                    <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
                                   </block>
                                 </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">1</field>
                               </block>
                             </value>
                           </block>
@@ -1674,15 +1665,115 @@
               </block>
             </statement>
             <next>
-              <block type="subroutineInstanceBlock">
-                <field name="SUBROUTINE_NAME">menu_display</field>
-                <next>
-                  <block type="Wait">
+              <block type="If">
+                <value name="VALUE-0">
+                  <block type="GetSoldierState">
                     <value name="VALUE-0">
-                      <block type="Number">
-                        <field name="NUM">0.5</field>
+                      <block type="EventPlayer"></block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="SoldierStateBoolItem">
+                        <field name="VALUE-0">SoldierStateBool</field>
+                        <field name="VALUE-1">IsCrouching</field>
                       </block>
                     </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="SetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">Player</field>
+                        <field name="VAR" id="mg)yD}9;RlN,XJ}fUJ`A" variabletype="Player">MenuSelection</field>
+                        <value name="OBJECT">
+                          <block type="EventPlayer"></block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Subtract">
+                        <value name="VALUE-0">
+                          <block type="GetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="true"></mutation>
+                                <field name="OBJECTTYPE">Player</field>
+                                <field name="VAR" id="mg)yD}9;RlN,XJ}fUJ`A" variabletype="Player">MenuSelection</field>
+                                <value name="OBJECT">
+                                  <block type="EventPlayer"></block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="VALUE-1">
+                          <block type="Number">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="If">
+                        <value name="VALUE-0">
+                          <block type="LessThan" inline="false">
+                            <value name="VALUE-0">
+                              <block type="GetVariable">
+                                <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">Player</field>
+                                    <field name="VAR" id="mg)yD}9;RlN,XJ}fUJ`A" variabletype="Player">MenuSelection</field>
+                                    <value name="OBJECT">
+                                      <block type="EventPlayer"></block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="SetVariable">
+                            <value name="VALUE-0">
+                              <block type="variableReferenceBlock">
+                                <mutation isObjectVar="true"></mutation>
+                                <field name="OBJECTTYPE">Player</field>
+                                <field name="VAR" id="mg)yD}9;RlN,XJ}fUJ`A" variabletype="Player">MenuSelection</field>
+                                <value name="OBJECT">
+                                  <block type="EventPlayer"></block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="Number">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="subroutineInstanceBlock">
+                    <field name="SUBROUTINE_NAME">menu_display</field>
+                    <next>
+                      <block type="Wait">
+                        <value name="VALUE-0">
+                          <block type="Number">
+                            <field name="NUM">0.5</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -1692,6 +1783,7 @@
       </block>
     </statement>
   </block>
+  <block type="Subtract" x="3983" y="-228"></block>
   <block type="modBlock" deletable="false" x="652" y="103">
     <statement name="RULES">
       <block type="ruleBlock">
