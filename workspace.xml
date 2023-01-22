@@ -251,7 +251,7 @@
                     </value>
                     <value name="VALUE-2">
                       <block type="Text">
-                        <field name="TEXT">Throwaböles</field>
+                        <field name="TEXT">Throwables</field>
                       </block>
                     </value>
                     <next>
@@ -301,7 +301,7 @@
                                 </value>
                                 <value name="VALUE-2">
                                   <block type="Text">
-                                    <field name="TEXT">Action 4</field>
+                                    <field name="TEXT">Assault</field>
                                   </block>
                                 </value>
                                 <next>
@@ -320,7 +320,7 @@
                                     </value>
                                     <value name="VALUE-2">
                                       <block type="Text">
-                                        <field name="TEXT">Action 5</field>
+                                        <field name="TEXT">SMG</field>
                                       </block>
                                     </value>
                                     <next>
@@ -339,7 +339,7 @@
                                         </value>
                                         <value name="VALUE-2">
                                           <block type="Text">
-                                            <field name="TEXT">Action 6</field>
+                                            <field name="TEXT">LMG</field>
                                           </block>
                                         </value>
                                         <next>
@@ -358,7 +358,7 @@
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="Text">
-                                                <field name="TEXT">Action 7</field>
+                                                <field name="TEXT">DMR</field>
                                               </block>
                                             </value>
                                             <next>
@@ -377,7 +377,7 @@
                                                 </value>
                                                 <value name="VALUE-2">
                                                   <block type="Text">
-                                                    <field name="TEXT">Action 8</field>
+                                                    <field name="TEXT">Sniper</field>
                                                   </block>
                                                 </value>
                                                 <next>
@@ -396,27 +396,20 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="Text">
-                                                        <field name="TEXT">Action 9</field>
+                                                        <field name="TEXT">Shotgun</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="SetVariableAtIndex">
+                                                      <block type="SetVariable">
                                                         <value name="VALUE-0">
                                                           <block type="variableReferenceBlock">
                                                             <mutation isObjectVar="false"></mutation>
                                                             <field name="OBJECTTYPE">Global</field>
-                                                            <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                            <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="Number">
-                                                            <field name="NUM">10</field>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-2">
-                                                          <block type="Text">
-                                                            <field name="TEXT">Action 10</field>
-                                                          </block>
+                                                          <block type="EmptyArray"></block>
                                                         </value>
                                                         <next>
                                                           <block type="SetVariableAtIndex">
@@ -424,17 +417,17 @@
                                                               <block type="variableReferenceBlock">
                                                                 <mutation isObjectVar="false"></mutation>
                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Number">
-                                                                <field name="NUM">11</field>
+                                                                <field name="NUM">0</field>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-2">
                                                               <block type="Text">
-                                                                <field name="TEXT">Action 11</field>
+                                                                <field name="TEXT">M44</field>
                                                               </block>
                                                             </value>
                                                             <next>
@@ -443,17 +436,17 @@
                                                                   <block type="variableReferenceBlock">
                                                                     <mutation isObjectVar="false"></mutation>
                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                    <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-1">
                                                                   <block type="Number">
-                                                                    <field name="NUM">12</field>
+                                                                    <field name="NUM">1</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-2">
                                                                   <block type="Text">
-                                                                    <field name="TEXT">Action 12</field>
+                                                                    <field name="TEXT">NVK-P125</field>
                                                                   </block>
                                                                 </value>
                                                                 <next>
@@ -462,17 +455,17 @@
                                                                       <block type="variableReferenceBlock">
                                                                         <mutation isObjectVar="false"></mutation>
                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                        <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
                                                                       <block type="Number">
-                                                                        <field name="NUM">13</field>
+                                                                        <field name="NUM">2</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-2">
                                                                       <block type="Text">
-                                                                        <field name="TEXT">Action 13</field>
+                                                                        <field name="TEXT">MP28</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
@@ -481,17 +474,17 @@
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="false"></mutation>
                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                            <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-1">
                                                                           <block type="Number">
-                                                                            <field name="NUM">14</field>
+                                                                            <field name="NUM">3</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-2">
                                                                           <block type="Text">
-                                                                            <field name="TEXT">Action 14</field>
+                                                                            <field name="TEXT">MP412 REX</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
@@ -500,37 +493,30 @@
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                                <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="VALUE-1">
                                                                               <block type="Number">
-                                                                                <field name="NUM">15</field>
+                                                                                <field name="NUM">4</field>
                                                                               </block>
                                                                             </value>
                                                                             <value name="VALUE-2">
                                                                               <block type="Text">
-                                                                                <field name="TEXT">Action 15</field>
+                                                                                <field name="TEXT">MP443</field>
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="SetVariableAtIndex">
+                                                                              <block type="SetVariable">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                    <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                                    <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="Number">
-                                                                                    <field name="NUM">16</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                                <value name="VALUE-2">
-                                                                                  <block type="Text">
-                                                                                    <field name="TEXT">Action 16</field>
-                                                                                  </block>
+                                                                                  <block type="EmptyArray"></block>
                                                                                 </value>
                                                                                 <next>
                                                                                   <block type="SetVariableAtIndex">
@@ -538,17 +524,17 @@
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                                        <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-1">
                                                                                       <block type="Number">
-                                                                                        <field name="NUM">17</field>
+                                                                                        <field name="NUM">0</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-2">
                                                                                       <block type="Text">
-                                                                                        <field name="TEXT">Action 17</field>
+                                                                                        <field name="TEXT">Action 15</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
@@ -557,17 +543,17 @@
                                                                                           <block type="variableReferenceBlock">
                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                                            <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="VALUE-1">
                                                                                           <block type="Number">
-                                                                                            <field name="NUM">18</field>
+                                                                                            <field name="NUM">1</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="VALUE-2">
                                                                                           <block type="Text">
-                                                                                            <field name="TEXT">Action 18</field>
+                                                                                            <field name="TEXT">Action 16</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
@@ -576,19 +562,61 @@
                                                                                               <block type="variableReferenceBlock">
                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                <field name="VAR" id="qWz]yp+=g6Hfm`{40_Kx" variabletype="Global">MainMenu</field>
+                                                                                                <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
                                                                                               <block type="Number">
-                                                                                                <field name="NUM">19</field>
+                                                                                                <field name="NUM">2</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-2">
                                                                                               <block type="Text">
-                                                                                                <field name="TEXT">Action 19</field>
+                                                                                                <field name="TEXT">Action 17</field>
                                                                                               </block>
                                                                                             </value>
+                                                                                            <next>
+                                                                                              <block type="SetVariableAtIndex">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="variableReferenceBlock">
+                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                    <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">3</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-2">
+                                                                                                  <block type="Text">
+                                                                                                    <field name="TEXT">Action 18</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                        <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">4</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-2">
+                                                                                                      <block type="Text">
+                                                                                                        <field name="TEXT">Action 19</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
@@ -784,30 +812,6 @@
         </statement>
       </block>
     </statement>
-  </block>
-  <block type="SetVariable" x="-726" y="5">
-    <value name="VALUE-0">
-      <block type="variableReferenceBlock">
-        <mutation isObjectVar="false"></mutation>
-        <field name="OBJECTTYPE">Global</field>
-        <field name="VAR" id="S^]4iy{}jcY#6)y{1Cb#" variabletype="Global">MenuSecondaries</field>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="EmptyArray"></block>
-    </value>
-  </block>
-  <block type="SetVariable" x="-672" y="111">
-    <value name="VALUE-0">
-      <block type="variableReferenceBlock">
-        <mutation isObjectVar="false"></mutation>
-        <field name="OBJECTTYPE">Global</field>
-        <field name="VAR" id="+ERSov(x%_$SCA7na92:" variabletype="Global">MenuThrowables</field>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="EmptyArray"></block>
-    </value>
   </block>
   <block type="modBlock" deletable="false" x="652" y="103">
     <statement name="RULES">
@@ -1471,6 +1475,10 @@
     <value name="VALUE-1">
       <block type="EmptyArray"></block>
     </value>
+  </block>
+  <block type="SecondaryWeaponsItem" x="-679" y="471">
+    <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+    <field name="VALUE-1">MP443_ALX</field>
   </block>
   <block type="subroutineBlock" deletable="false" x="3191" y="772">
     <field name="SUBROUTINE_NAME">menu_display</field>
