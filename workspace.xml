@@ -392,26 +392,19 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="SetVariableAtIndex">
+                                              <block type="SetVariable">
                                                 <value name="VALUE-0">
                                                   <block type="variableReferenceBlock">
                                                     <mutation isObjectVar="false"></mutation>
                                                     <field name="OBJECTTYPE">Global</field>
-                                                    <field name="VAR" id="/pZpJyhAR@OW3}T^@Z-_" variabletype="Global">MainMenu</field>
+                                                    <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
-                                                  <block type="Number">
-                                                    <field name="NUM">9</field>
-                                                  </block>
-                                                </value>
-                                                <value name="VALUE-2">
-                                                  <block type="Text">
-                                                    <field name="TEXT">Gadgets</field>
-                                                  </block>
+                                                  <block type="EmptyArray"></block>
                                                 </value>
                                                 <next>
-                                                  <block type="SetVariable">
+                                                  <block type="SetVariableAtIndex">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
                                                         <mutation isObjectVar="false"></mutation>
@@ -420,7 +413,14 @@
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="EmptyArray"></block>
+                                                      <block type="Number">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="Text">
+                                                        <field name="TEXT">M44</field>
+                                                      </block>
                                                     </value>
                                                     <next>
                                                       <block type="SetVariableAtIndex">
@@ -433,12 +433,12 @@
                                                         </value>
                                                         <value name="VALUE-1">
                                                           <block type="Number">
-                                                            <field name="NUM">0</field>
+                                                            <field name="NUM">1</field>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-2">
                                                           <block type="Text">
-                                                            <field name="TEXT">M44</field>
+                                                            <field name="TEXT">NVK-P125</field>
                                                           </block>
                                                         </value>
                                                         <next>
@@ -452,12 +452,12 @@
                                                             </value>
                                                             <value name="VALUE-1">
                                                               <block type="Number">
-                                                                <field name="NUM">1</field>
+                                                                <field name="NUM">2</field>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-2">
                                                               <block type="Text">
-                                                                <field name="TEXT">NVK-P125</field>
+                                                                <field name="TEXT">MP28</field>
                                                               </block>
                                                             </value>
                                                             <next>
@@ -471,12 +471,12 @@
                                                                 </value>
                                                                 <value name="VALUE-1">
                                                                   <block type="Number">
-                                                                    <field name="NUM">2</field>
+                                                                    <field name="NUM">3</field>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-2">
                                                                   <block type="Text">
-                                                                    <field name="TEXT">MP28</field>
+                                                                    <field name="TEXT">MP412 REX</field>
                                                                   </block>
                                                                 </value>
                                                                 <next>
@@ -490,35 +490,28 @@
                                                                     </value>
                                                                     <value name="VALUE-1">
                                                                       <block type="Number">
-                                                                        <field name="NUM">3</field>
+                                                                        <field name="NUM">4</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-2">
                                                                       <block type="Text">
-                                                                        <field name="TEXT">MP412 REX</field>
+                                                                        <field name="TEXT">MP443</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
-                                                                      <block type="SetVariableAtIndex">
+                                                                      <block type="SetVariable">
                                                                         <value name="VALUE-0">
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="false"></mutation>
                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                            <field name="VAR" id="T5XgEdLKD`tUnTWb!oKt" variabletype="Global">MenuAR</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-1">
-                                                                          <block type="Number">
-                                                                            <field name="NUM">4</field>
-                                                                          </block>
-                                                                        </value>
-                                                                        <value name="VALUE-2">
-                                                                          <block type="Text">
-                                                                            <field name="TEXT">MP443</field>
-                                                                          </block>
+                                                                          <block type="EmptyArray"></block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="SetVariable">
+                                                                          <block type="SetVariableAtIndex">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="false"></mutation>
@@ -527,7 +520,14 @@
                                                                               </block>
                                                                             </value>
                                                                             <value name="VALUE-1">
-                                                                              <block type="EmptyArray"></block>
+                                                                              <block type="Number">
+                                                                                <field name="NUM">0</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-2">
+                                                                              <block type="Text">
+                                                                                <field name="TEXT">StG 44</field>
+                                                                              </block>
                                                                             </value>
                                                                             <next>
                                                                               <block type="SetVariableAtIndex">
@@ -540,12 +540,12 @@
                                                                                 </value>
                                                                                 <value name="VALUE-1">
                                                                                   <block type="Number">
-                                                                                    <field name="NUM">0</field>
+                                                                                    <field name="NUM">2</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-2">
                                                                                   <block type="Text">
-                                                                                    <field name="TEXT">StG 44</field>
+                                                                                    <field name="TEXT">AEK-971</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
@@ -559,12 +559,12 @@
                                                                                     </value>
                                                                                     <value name="VALUE-1">
                                                                                       <block type="Number">
-                                                                                        <field name="NUM">2</field>
+                                                                                        <field name="NUM">3</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-2">
                                                                                       <block type="Text">
-                                                                                        <field name="TEXT">AEK-971</field>
+                                                                                        <field name="TEXT">AN-94</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
@@ -578,35 +578,28 @@
                                                                                         </value>
                                                                                         <value name="VALUE-1">
                                                                                           <block type="Number">
-                                                                                            <field name="NUM">3</field>
+                                                                                            <field name="NUM">4</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <value name="VALUE-2">
                                                                                           <block type="Text">
-                                                                                            <field name="TEXT">AN-94</field>
+                                                                                            <field name="TEXT">M16A3</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="SetVariableAtIndex">
+                                                                                          <block type="SetVariable">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="variableReferenceBlock">
                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                <field name="VAR" id="T5XgEdLKD`tUnTWb!oKt" variabletype="Global">MenuAR</field>
+                                                                                                <field name="VAR" id="bvmyZ7*RG$3poy1n5[Eq" variabletype="Global">MenuSMG</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <value name="VALUE-1">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">4</field>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                            <value name="VALUE-2">
-                                                                                              <block type="Text">
-                                                                                                <field name="TEXT">M16A3</field>
-                                                                                              </block>
+                                                                                              <block type="EmptyArray"></block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="SetVariable">
+                                                                                              <block type="SetVariableAtIndex">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="variableReferenceBlock">
                                                                                                     <mutation isObjectVar="false"></mutation>
@@ -615,7 +608,14 @@
                                                                                                   </block>
                                                                                                 </value>
                                                                                                 <value name="VALUE-1">
-                                                                                                  <block type="EmptyArray"></block>
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">0</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-2">
+                                                                                                  <block type="Text">
+                                                                                                    <field name="TEXT">MP 40</field>
+                                                                                                  </block>
                                                                                                 </value>
                                                                                                 <next>
                                                                                                   <block type="SetVariableAtIndex">
@@ -628,12 +628,12 @@
                                                                                                     </value>
                                                                                                     <value name="VALUE-1">
                                                                                                       <block type="Number">
-                                                                                                        <field name="NUM">0</field>
+                                                                                                        <field name="NUM">1</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <value name="VALUE-2">
                                                                                                       <block type="Text">
-                                                                                                        <field name="TEXT">MP 40</field>
+                                                                                                        <field name="TEXT">AS Val</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                     <next>
@@ -647,12 +647,12 @@
                                                                                                         </value>
                                                                                                         <value name="VALUE-1">
                                                                                                           <block type="Number">
-                                                                                                            <field name="NUM">1</field>
+                                                                                                            <field name="NUM">2</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <value name="VALUE-2">
                                                                                                           <block type="Text">
-                                                                                                            <field name="TEXT">AS Val</field>
+                                                                                                            <field name="TEXT">P90</field>
                                                                                                           </block>
                                                                                                         </value>
                                                                                                         <next>
@@ -666,35 +666,28 @@
                                                                                                             </value>
                                                                                                             <value name="VALUE-1">
                                                                                                               <block type="Number">
-                                                                                                                <field name="NUM">2</field>
+                                                                                                                <field name="NUM">3</field>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <value name="VALUE-2">
                                                                                                               <block type="Text">
-                                                                                                                <field name="TEXT">P90</field>
+                                                                                                                <field name="TEXT">AKS-74u</field>
                                                                                                               </block>
                                                                                                             </value>
                                                                                                             <next>
-                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                              <block type="SetVariable">
                                                                                                                 <value name="VALUE-0">
                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                    <field name="VAR" id="bvmyZ7*RG$3poy1n5[Eq" variabletype="Global">MenuSMG</field>
+                                                                                                                    <field name="VAR" id="i^#VZBN$UuhN,6m}BTrA" variabletype="Global">MenuShotgun</field>
                                                                                                                   </block>
                                                                                                                 </value>
                                                                                                                 <value name="VALUE-1">
-                                                                                                                  <block type="Number">
-                                                                                                                    <field name="NUM">3</field>
-                                                                                                                  </block>
-                                                                                                                </value>
-                                                                                                                <value name="VALUE-2">
-                                                                                                                  <block type="Text">
-                                                                                                                    <field name="TEXT">AKS-74u</field>
-                                                                                                                  </block>
+                                                                                                                  <block type="EmptyArray"></block>
                                                                                                                 </value>
                                                                                                                 <next>
-                                                                                                                  <block type="SetVariable">
+                                                                                                                  <block type="SetVariableAtIndex">
                                                                                                                     <value name="VALUE-0">
                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                         <mutation isObjectVar="false"></mutation>
@@ -703,7 +696,14 @@
                                                                                                                       </block>
                                                                                                                     </value>
                                                                                                                     <value name="VALUE-1">
-                                                                                                                      <block type="EmptyArray"></block>
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">0</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-2">
+                                                                                                                      <block type="Text">
+                                                                                                                        <field name="TEXT">SPAS-12</field>
+                                                                                                                      </block>
                                                                                                                     </value>
                                                                                                                     <next>
                                                                                                                       <block type="SetVariableAtIndex">
@@ -716,12 +716,12 @@
                                                                                                                         </value>
                                                                                                                         <value name="VALUE-1">
                                                                                                                           <block type="Number">
-                                                                                                                            <field name="NUM">0</field>
+                                                                                                                            <field name="NUM">1</field>
                                                                                                                           </block>
                                                                                                                         </value>
                                                                                                                         <value name="VALUE-2">
                                                                                                                           <block type="Text">
-                                                                                                                            <field name="TEXT">SPAS-12</field>
+                                                                                                                            <field name="TEXT">DAO-12</field>
                                                                                                                           </block>
                                                                                                                         </value>
                                                                                                                         <next>
@@ -735,12 +735,12 @@
                                                                                                                             </value>
                                                                                                                             <value name="VALUE-1">
                                                                                                                               <block type="Number">
-                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                <field name="NUM">2</field>
                                                                                                                               </block>
                                                                                                                             </value>
                                                                                                                             <value name="VALUE-2">
                                                                                                                               <block type="Text">
-                                                                                                                                <field name="TEXT">DAO-12</field>
+                                                                                                                                <field name="TEXT">12M Auto</field>
                                                                                                                               </block>
                                                                                                                             </value>
                                                                                                                             <next>
@@ -754,35 +754,28 @@
                                                                                                                                 </value>
                                                                                                                                 <value name="VALUE-1">
                                                                                                                                   <block type="Number">
-                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                    <field name="NUM">3</field>
                                                                                                                                   </block>
                                                                                                                                 </value>
                                                                                                                                 <value name="VALUE-2">
                                                                                                                                   <block type="Text">
-                                                                                                                                    <field name="TEXT">12M Auto</field>
+                                                                                                                                    <field name="TEXT">MCS-880</field>
                                                                                                                                   </block>
                                                                                                                                 </value>
                                                                                                                                 <next>
-                                                                                                                                  <block type="SetVariableAtIndex">
+                                                                                                                                  <block type="SetVariable">
                                                                                                                                     <value name="VALUE-0">
                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                                                        <field name="VAR" id="i^#VZBN$UuhN,6m}BTrA" variabletype="Global">MenuShotgun</field>
+                                                                                                                                        <field name="VAR" id="~7RiR(K|bVjvP}nJL??s" variabletype="Global">MenuLMG</field>
                                                                                                                                       </block>
                                                                                                                                     </value>
                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                      <block type="Number">
-                                                                                                                                        <field name="NUM">3</field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="VALUE-2">
-                                                                                                                                      <block type="Text">
-                                                                                                                                        <field name="TEXT">MCS-880</field>
-                                                                                                                                      </block>
+                                                                                                                                      <block type="EmptyArray"></block>
                                                                                                                                     </value>
                                                                                                                                     <next>
-                                                                                                                                      <block type="SetVariable">
+                                                                                                                                      <block type="SetVariableAtIndex">
                                                                                                                                         <value name="VALUE-0">
                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                             <mutation isObjectVar="false"></mutation>
@@ -791,7 +784,14 @@
                                                                                                                                           </block>
                                                                                                                                         </value>
                                                                                                                                         <value name="VALUE-1">
-                                                                                                                                          <block type="EmptyArray"></block>
+                                                                                                                                          <block type="Number">
+                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="VALUE-2">
+                                                                                                                                          <block type="Text">
+                                                                                                                                            <field name="TEXT">M240B</field>
+                                                                                                                                          </block>
                                                                                                                                         </value>
                                                                                                                                         <next>
                                                                                                                                           <block type="SetVariableAtIndex">
@@ -804,12 +804,12 @@
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-1">
                                                                                                                                               <block type="Number">
-                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                <field name="NUM">1</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <value name="VALUE-2">
                                                                                                                                               <block type="Text">
-                                                                                                                                                <field name="TEXT">M240B</field>
+                                                                                                                                                <field name="TEXT">M249 SAW</field>
                                                                                                                                               </block>
                                                                                                                                             </value>
                                                                                                                                             <next>
@@ -823,12 +823,12 @@
                                                                                                                                                 </value>
                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                   <block type="Number">
-                                                                                                                                                    <field name="NUM">1</field>
+                                                                                                                                                    <field name="NUM">2</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                   <block type="Text">
-                                                                                                                                                    <field name="TEXT">M249 SAW</field>
+                                                                                                                                                    <field name="TEXT">Avancys</field>
                                                                                                                                                   </block>
                                                                                                                                                 </value>
                                                                                                                                                 <next>
@@ -842,35 +842,28 @@
                                                                                                                                                     </value>
                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                       <block type="Number">
-                                                                                                                                                        <field name="NUM">2</field>
+                                                                                                                                                        <field name="NUM">3</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                       <block type="Text">
-                                                                                                                                                        <field name="TEXT">Avancys</field>
+                                                                                                                                                        <field name="TEXT">LCMG</field>
                                                                                                                                                       </block>
                                                                                                                                                     </value>
                                                                                                                                                     <next>
-                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                      <block type="SetVariable">
                                                                                                                                                         <value name="VALUE-0">
                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                            <field name="VAR" id="~7RiR(K|bVjvP}nJL??s" variabletype="Global">MenuLMG</field>
+                                                                                                                                                            <field name="VAR" id="ccL(5SVo/SaD~1wZoH+|" variabletype="Global">MenuDMR</field>
                                                                                                                                                           </block>
                                                                                                                                                         </value>
                                                                                                                                                         <value name="VALUE-1">
-                                                                                                                                                          <block type="Number">
-                                                                                                                                                            <field name="NUM">3</field>
-                                                                                                                                                          </block>
-                                                                                                                                                        </value>
-                                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                                          <block type="Text">
-                                                                                                                                                            <field name="TEXT">LCMG</field>
-                                                                                                                                                          </block>
+                                                                                                                                                          <block type="EmptyArray"></block>
                                                                                                                                                         </value>
                                                                                                                                                         <next>
-                                                                                                                                                          <block type="SetVariable">
+                                                                                                                                                          <block type="SetVariableAtIndex">
                                                                                                                                                             <value name="VALUE-0">
                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
@@ -879,7 +872,14 @@
                                                                                                                                                               </block>
                                                                                                                                                             </value>
                                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                                              <block type="EmptyArray"></block>
+                                                                                                                                                              <block type="Number">
+                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                              </block>
+                                                                                                                                                            </value>
+                                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                                              <block type="Text">
+                                                                                                                                                                <field name="TEXT">DM7</field>
+                                                                                                                                                              </block>
                                                                                                                                                             </value>
                                                                                                                                                             <next>
                                                                                                                                                               <block type="SetVariableAtIndex">
@@ -892,12 +892,12 @@
                                                                                                                                                                 </value>
                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                    <field name="NUM">1</field>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                   <block type="Text">
-                                                                                                                                                                    <field name="TEXT">DM7</field>
+                                                                                                                                                                    <field name="TEXT">SCD</field>
                                                                                                                                                                   </block>
                                                                                                                                                                 </value>
                                                                                                                                                                 <next>
@@ -911,12 +911,12 @@
                                                                                                                                                                     </value>
                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                        <field name="NUM">1</field>
+                                                                                                                                                                        <field name="NUM">2</field>
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                        <field name="TEXT">SCD</field>
+                                                                                                                                                                        <field name="TEXT">M39 EMR</field>
                                                                                                                                                                       </block>
                                                                                                                                                                     </value>
                                                                                                                                                                     <next>
@@ -930,35 +930,28 @@
                                                                                                                                                                         </value>
                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                            <field name="NUM">2</field>
+                                                                                                                                                                            <field name="NUM">3</field>
                                                                                                                                                                           </block>
                                                                                                                                                                         </value>
                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                            <field name="TEXT">M39 EMR</field>
+                                                                                                                                                                            <field name="TEXT">SVK</field>
                                                                                                                                                                           </block>
                                                                                                                                                                         </value>
                                                                                                                                                                         <next>
-                                                                                                                                                                          <block type="SetVariableAtIndex">
+                                                                                                                                                                          <block type="SetVariable">
                                                                                                                                                                             <value name="VALUE-0">
                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                <field name="VAR" id="ccL(5SVo/SaD~1wZoH+|" variabletype="Global">MenuDMR</field>
+                                                                                                                                                                                <field name="VAR" id="QA*S|[lNP;fQh~JbRO?B" variabletype="Global">MenuSniper</field>
                                                                                                                                                                               </block>
                                                                                                                                                                             </value>
                                                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                <field name="NUM">3</field>
-                                                                                                                                                                              </block>
-                                                                                                                                                                            </value>
-                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                              <block type="Text">
-                                                                                                                                                                                <field name="TEXT">SVK</field>
-                                                                                                                                                                              </block>
+                                                                                                                                                                              <block type="EmptyArray"></block>
                                                                                                                                                                             </value>
                                                                                                                                                                             <next>
-                                                                                                                                                                              <block type="SetVariable">
+                                                                                                                                                                              <block type="SetVariableAtIndex">
                                                                                                                                                                                 <value name="VALUE-0">
                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
@@ -967,7 +960,14 @@
                                                                                                                                                                                   </block>
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <value name="VALUE-1">
-                                                                                                                                                                                  <block type="EmptyArray"></block>
+                                                                                                                                                                                  <block type="Number">
+                                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                                  </block>
+                                                                                                                                                                                </value>
+                                                                                                                                                                                <value name="VALUE-2">
+                                                                                                                                                                                  <block type="Text">
+                                                                                                                                                                                    <field name="TEXT">M98B</field>
+                                                                                                                                                                                  </block>
                                                                                                                                                                                 </value>
                                                                                                                                                                                 <next>
                                                                                                                                                                                   <block type="SetVariableAtIndex">
@@ -980,12 +980,12 @@
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                                        <field name="NUM">1</field>
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                                        <field name="TEXT">M98B</field>
+                                                                                                                                                                                        <field name="TEXT">Ghostmaker</field>
                                                                                                                                                                                       </block>
                                                                                                                                                                                     </value>
                                                                                                                                                                                     <next>
@@ -999,12 +999,12 @@
                                                                                                                                                                                         </value>
                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                                            <field name="NUM">1</field>
+                                                                                                                                                                                            <field name="NUM">2</field>
                                                                                                                                                                                           </block>
                                                                                                                                                                                         </value>
                                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                                            <field name="TEXT">Ghostmaker</field>
+                                                                                                                                                                                            <field name="TEXT">No4</field>
                                                                                                                                                                                           </block>
                                                                                                                                                                                         </value>
                                                                                                                                                                                         <next>
@@ -1018,35 +1018,28 @@
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                                               <block type="Number">
-                                                                                                                                                                                                <field name="NUM">2</field>
+                                                                                                                                                                                                <field name="NUM">3</field>
                                                                                                                                                                                               </block>
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <value name="VALUE-2">
                                                                                                                                                                                               <block type="Text">
-                                                                                                                                                                                                <field name="TEXT">No4</field>
+                                                                                                                                                                                                <field name="TEXT">K98 Sniper</field>
                                                                                                                                                                                               </block>
                                                                                                                                                                                             </value>
                                                                                                                                                                                             <next>
-                                                                                                                                                                                              <block type="SetVariableAtIndex">
+                                                                                                                                                                                              <block type="SetVariable">
                                                                                                                                                                                                 <value name="VALUE-0">
                                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                    <field name="VAR" id="QA*S|[lNP;fQh~JbRO?B" variabletype="Global">MenuSniper</field>
+                                                                                                                                                                                                    <field name="VAR" id="B0-P[B11fFz#9@)3YICL" variabletype="Global">MenuThrowables</field>
                                                                                                                                                                                                   </block>
                                                                                                                                                                                                 </value>
                                                                                                                                                                                                 <value name="VALUE-1">
-                                                                                                                                                                                                  <block type="Number">
-                                                                                                                                                                                                    <field name="NUM">3</field>
-                                                                                                                                                                                                  </block>
-                                                                                                                                                                                                </value>
-                                                                                                                                                                                                <value name="VALUE-2">
-                                                                                                                                                                                                  <block type="Text">
-                                                                                                                                                                                                    <field name="TEXT">K98 Sniper</field>
-                                                                                                                                                                                                  </block>
+                                                                                                                                                                                                  <block type="EmptyArray"></block>
                                                                                                                                                                                                 </value>
                                                                                                                                                                                                 <next>
-                                                                                                                                                                                                  <block type="SetVariable">
+                                                                                                                                                                                                  <block type="SetVariableAtIndex">
                                                                                                                                                                                                     <value name="VALUE-0">
                                                                                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                                                                                         <mutation isObjectVar="false"></mutation>
@@ -1055,7 +1048,14 @@
                                                                                                                                                                                                       </block>
                                                                                                                                                                                                     </value>
                                                                                                                                                                                                     <value name="VALUE-1">
-                                                                                                                                                                                                      <block type="EmptyArray"></block>
+                                                                                                                                                                                                      <block type="Number">
+                                                                                                                                                                                                        <field name="NUM">0</field>
+                                                                                                                                                                                                      </block>
+                                                                                                                                                                                                    </value>
+                                                                                                                                                                                                    <value name="VALUE-2">
+                                                                                                                                                                                                      <block type="Text">
+                                                                                                                                                                                                        <field name="TEXT">Frag grenade</field>
+                                                                                                                                                                                                      </block>
                                                                                                                                                                                                     </value>
                                                                                                                                                                                                     <next>
                                                                                                                                                                                                       <block type="SetVariableAtIndex">
@@ -1068,12 +1068,12 @@
                                                                                                                                                                                                         </value>
                                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                                                            <field name="NUM">0</field>
+                                                                                                                                                                                                            <field name="NUM">1</field>
                                                                                                                                                                                                           </block>
                                                                                                                                                                                                         </value>
                                                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                                                            <field name="TEXT">Frag grenade</field>
+                                                                                                                                                                                                            <field name="TEXT">Incendiary grenade</field>
                                                                                                                                                                                                           </block>
                                                                                                                                                                                                         </value>
                                                                                                                                                                                                         <next>
@@ -1087,12 +1087,12 @@
                                                                                                                                                                                                             </value>
                                                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                                                               <block type="Number">
-                                                                                                                                                                                                                <field name="NUM">1</field>
+                                                                                                                                                                                                                <field name="NUM">2</field>
                                                                                                                                                                                                               </block>
                                                                                                                                                                                                             </value>
                                                                                                                                                                                                             <value name="VALUE-2">
                                                                                                                                                                                                               <block type="Text">
-                                                                                                                                                                                                                <field name="TEXT">Incendiary grenade</field>
+                                                                                                                                                                                                                <field name="TEXT">Smoke grenade</field>
                                                                                                                                                                                                               </block>
                                                                                                                                                                                                             </value>
                                                                                                                                                                                                             <next>
@@ -1106,12 +1106,12 @@
                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                                                    <field name="NUM">2</field>
+                                                                                                                                                                                                                    <field name="NUM">3</field>
                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                                                                   <block type="Text">
-                                                                                                                                                                                                                    <field name="TEXT">Smoke grenade</field>
+                                                                                                                                                                                                                    <field name="TEXT">Throwing knife</field>
                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                 <next>
@@ -1125,35 +1125,28 @@
                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                                                        <field name="NUM">3</field>
+                                                                                                                                                                                                                        <field name="NUM">4</field>
                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                                                                        <field name="TEXT">Throwing knife</field>
+                                                                                                                                                                                                                        <field name="TEXT">Prox sensor</field>
                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                     <next>
-                                                                                                                                                                                                                      <block type="SetVariableAtIndex">
+                                                                                                                                                                                                                      <block type="SetVariable">
                                                                                                                                                                                                                         <value name="VALUE-0">
                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                            <field name="VAR" id="B0-P[B11fFz#9@)3YICL" variabletype="Global">MenuThrowables</field>
+                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedets</field>
                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                         <value name="VALUE-1">
-                                                                                                                                                                                                                          <block type="Number">
-                                                                                                                                                                                                                            <field name="NUM">4</field>
-                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                        </value>
-                                                                                                                                                                                                                        <value name="VALUE-2">
-                                                                                                                                                                                                                          <block type="Text">
-                                                                                                                                                                                                                            <field name="TEXT">Prox sensor</field>
-                                                                                                                                                                                                                          </block>
+                                                                                                                                                                                                                          <block type="EmptyArray"></block>
                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                         <next>
-                                                                                                                                                                                                                          <block type="SetVariable">
+                                                                                                                                                                                                                          <block type="SetVariableAtIndex">
                                                                                                                                                                                                                             <value name="VALUE-0">
                                                                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
@@ -1162,7 +1155,14 @@
                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                             <value name="VALUE-1">
-                                                                                                                                                                                                                              <block type="EmptyArray"></block>
+                                                                                                                                                                                                                              <block type="Number">
+                                                                                                                                                                                                                                <field name="NUM">0</field>
+                                                                                                                                                                                                                              </block>
+                                                                                                                                                                                                                            </value>
+                                                                                                                                                                                                                            <value name="VALUE-2">
+                                                                                                                                                                                                                              <block type="Text">
+                                                                                                                                                                                                                                <field name="TEXT">RPG-7</field>
+                                                                                                                                                                                                                              </block>
                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                             <next>
                                                                                                                                                                                                                               <block type="SetVariableAtIndex">
@@ -1175,12 +1175,12 @@
                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                                                                    <field name="NUM">0</field>
+                                                                                                                                                                                                                                    <field name="NUM">1</field>
                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                                                                                   <block type="Text">
-                                                                                                                                                                                                                                    <field name="TEXT">RPG-7</field>
+                                                                                                                                                                                                                                    <field name="TEXT">Recoiless M5</field>
                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                 <next>
@@ -1194,12 +1194,12 @@
                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                                                                        <field name="NUM">1</field>
+                                                                                                                                                                                                                                        <field name="NUM">2</field>
                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                                                                                        <field name="TEXT">Recoiless M5</field>
+                                                                                                                                                                                                                                        <field name="TEXT">Claymore</field>
                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                     <next>
@@ -1213,12 +1213,12 @@
                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                                                                                            <field name="NUM">2</field>
+                                                                                                                                                                                                                                            <field name="NUM">3</field>
                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                                                                                            <field name="TEXT">Claymore</field>
+                                                                                                                                                                                                                                            <field name="TEXT">C5</field>
                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                         <next>
@@ -1232,12 +1232,12 @@
                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                                                                                               <block type="Number">
-                                                                                                                                                                                                                                                <field name="NUM">3</field>
+                                                                                                                                                                                                                                                <field name="NUM">4</field>
                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                             <value name="VALUE-2">
                                                                                                                                                                                                                                               <block type="Text">
-                                                                                                                                                                                                                                                <field name="TEXT">C5</field>
+                                                                                                                                                                                                                                                <field name="TEXT">Med pen</field>
                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                             <next>
@@ -1251,12 +1251,12 @@
                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                                                                                    <field name="NUM">4</field>
+                                                                                                                                                                                                                                                    <field name="NUM">5</field>
                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                                                                                                   <block type="Text">
-                                                                                                                                                                                                                                                    <field name="TEXT">Med pen</field>
+                                                                                                                                                                                                                                                    <field name="TEXT">EMG-X Scanner</field>
                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                 <next>
@@ -1270,12 +1270,12 @@
                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                                                                                        <field name="NUM">5</field>
+                                                                                                                                                                                                                                                        <field name="NUM">6</field>
                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                                                                                                        <field name="TEXT">EMG-X Scanner</field>
+                                                                                                                                                                                                                                                        <field name="TEXT">Grappling hook</field>
                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                     <next>
@@ -1289,12 +1289,12 @@
                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                                                                                                            <field name="NUM">6</field>
+                                                                                                                                                                                                                                                            <field name="NUM">7</field>
                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                                                                                                            <field name="TEXT">Grappling hook</field>
+                                                                                                                                                                                                                                                            <field name="TEXT">XM</field>
                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                         <next>
@@ -1308,12 +1308,12 @@
                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                             <value name="VALUE-1">
                                                                                                                                                                                                                                                               <block type="Number">
-                                                                                                                                                                                                                                                                <field name="NUM">7</field>
+                                                                                                                                                                                                                                                                <field name="NUM">8</field>
                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                             <value name="VALUE-2">
                                                                                                                                                                                                                                                               <block type="Text">
-                                                                                                                                                                                                                                                                <field name="TEXT">XM</field>
+                                                                                                                                                                                                                                                                <field name="TEXT">fortification system</field>
                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                             <next>
@@ -1327,12 +1327,12 @@
                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                 <value name="VALUE-1">
                                                                                                                                                                                                                                                                   <block type="Number">
-                                                                                                                                                                                                                                                                    <field name="NUM">8</field>
+                                                                                                                                                                                                                                                                    <field name="NUM">9</field>
                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                 <value name="VALUE-2">
                                                                                                                                                                                                                                                                   <block type="Text">
-                                                                                                                                                                                                                                                                    <field name="TEXT">fortification system</field>
+                                                                                                                                                                                                                                                                    <field name="TEXT">Ballistic shield</field>
                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                 <next>
@@ -1346,12 +1346,12 @@
                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                     <value name="VALUE-1">
                                                                                                                                                                                                                                                                       <block type="Number">
-                                                                                                                                                                                                                                                                        <field name="NUM">9</field>
+                                                                                                                                                                                                                                                                        <field name="NUM">10</field>
                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                     <value name="VALUE-2">
                                                                                                                                                                                                                                                                       <block type="Text">
-                                                                                                                                                                                                                                                                        <field name="TEXT">Ballistic shield</field>
+                                                                                                                                                                                                                                                                        <field name="TEXT">SG-36 Sentry gun</field>
                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                     <next>
@@ -1365,35 +1365,14 @@
                                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                                         <value name="VALUE-1">
                                                                                                                                                                                                                                                                           <block type="Number">
-                                                                                                                                                                                                                                                                            <field name="NUM">10</field>
+                                                                                                                                                                                                                                                                            <field name="NUM">11</field>
                                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                                         <value name="VALUE-2">
                                                                                                                                                                                                                                                                           <block type="Text">
-                                                                                                                                                                                                                                                                            <field name="TEXT">SG-36 Sentry gun</field>
+                                                                                                                                                                                                                                                                            <field name="TEXT">Mounted Vulkan</field>
                                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                                         </value>
-                                                                                                                                                                                                                                                                        <next>
-                                                                                                                                                                                                                                                                          <block type="SetVariableAtIndex">
-                                                                                                                                                                                                                                                                            <value name="VALUE-0">
-                                                                                                                                                                                                                                                                              <block type="variableReferenceBlock">
-                                                                                                                                                                                                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                                                                                                                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedets</field>
-                                                                                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                                                                                            <value name="VALUE-1">
-                                                                                                                                                                                                                                                                              <block type="Number">
-                                                                                                                                                                                                                                                                                <field name="NUM">11</field>
-                                                                                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                                                                                            <value name="VALUE-2">
-                                                                                                                                                                                                                                                                              <block type="Text">
-                                                                                                                                                                                                                                                                                <field name="TEXT">Mounted Vulkan</field>
-                                                                                                                                                                                                                                                                              </block>
-                                                                                                                                                                                                                                                                            </value>
-                                                                                                                                                                                                                                                                          </block>
-                                                                                                                                                                                                                                                                        </next>
                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                     </next>
                                                                                                                                                                                                                                                                   </block>
@@ -6177,7 +6156,7 @@
     </value>
   </block>
   <block type="EventPlayer" x="2403" y="2092"></block>
-  <block type="If" x="4832" y="5383">
+  <block type="If" x="4846" y="4440">
     <value name="VALUE-0">
       <block type="GetSoldierState">
         <value name="VALUE-0">
@@ -6186,357 +6165,12 @@
         <value name="VALUE-1">
           <block type="SoldierStateBoolItem">
             <field name="VALUE-0">SoldierStateBool</field>
-            <field name="VALUE-1">IsInteracting</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <next>
-      <block type="subroutineInstanceBlock">
-        <field name="SUBROUTINE_NAME">menu_display</field>
-        <next>
-          <block type="Wait">
-            <value name="VALUE-0">
-              <block type="Number">
-                <field name="NUM">0.5</field>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </next>
-  </block>
-  <block type="If" x="6515" y="5480">
-    <mutation elseif="4" else="1"></mutation>
-    <value name="VALUE-0">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">0</field>
+            <field name="VALUE-1">IsFiring</field>
           </block>
         </value>
       </block>
     </value>
     <statement name="DO">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">assault</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <value name="IF1">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">1</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO1">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">smg</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <value name="IF2">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">2</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO2">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">shotgun</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <value name="IF3">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">3</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO3">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">lmg</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <value name="IF4">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Number">
-            <field name="NUM">3</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO4">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">dmr</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <statement name="ELSE">
-      <block type="SetVariable">
-        <value name="VALUE-0">
-          <block type="variableReferenceBlock">
-            <mutation isObjectVar="true"></mutation>
-            <field name="OBJECTTYPE">Player</field>
-            <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-            <value name="OBJECT">
-              <block type="EventPlayer"></block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">sniper</field>
-          </block>
-        </value>
-      </block>
-    </statement>
-    <next>
-      <block type="If">
-        <mutation elseif="2" else="1"></mutation>
-        <value name="VALUE-0">
-          <block type="Equals">
-            <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">Player</field>
-                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">Main_MenuSelection</field>
-                    <value name="OBJECT">
-                      <block type="EventPlayer"></block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <value name="IF1">
-          <block type="Equals">
-            <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">Player</field>
-                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">Main_MenuSelection</field>
-                    <value name="OBJECT">
-                      <block type="EventPlayer"></block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">1</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO1">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Text">
-                <field name="TEXT">secondaries</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <value name="IF2">
-          <block type="Equals">
-            <value name="VALUE-0">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">Player</field>
-                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">Main_MenuSelection</field>
-                    <value name="OBJECT">
-                      <block type="EventPlayer"></block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">2</field>
-              </block>
-            </value>
-          </block>
-        </value>
-        <statement name="DO2">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Text">
-                <field name="TEXT">throwables</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-        <statement name="ELSE">
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Text">
-                <field name="TEXT">gadgets</field>
-              </block>
-            </value>
-          </block>
-        </statement>
-      </block>
-    </next>
-  </block>
-  <block type="EventPlayer" x="6954" y="5541"></block>
-  <block type="EventPlayer" x="6948" y="5655"></block>
-  <block type="EventPlayer" x="6946" y="5776"></block>
-  <block type="If" x="4681" y="5995">
-    <value name="VALUE-0">
-      <block type="Equals">
-        <value name="VALUE-0">
-          <block type="GetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </value>
-    <next>
       <block type="If">
         <value name="VALUE-0">
           <block type="Equals">
@@ -6554,14 +6188,149 @@
                 </value>
               </block>
             </value>
+            <value name="VALUE-1">
+              <block type="Number">
+                <field name="NUM">0</field>
+              </block>
+            </value>
           </block>
         </value>
+        <statement name="DO">
+          <block type="SetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="true"></mutation>
+                <field name="OBJECTTYPE">Player</field>
+                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                <value name="OBJECT">
+                  <block type="EventPlayer"></block>
+                </value>
+              </block>
+            </value>
+            <value name="VALUE-1">
+              <block type="Add">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">Player</field>
+                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">Main_MenuSelection</field>
+                        <value name="OBJECT">
+                          <block type="EventPlayer"></block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <next>
+      <block type="If">
+        <value name="VALUE-0">
+          <block type="GetSoldierState">
+            <value name="VALUE-0">
+              <block type="EventPlayer"></block>
+            </value>
+            <value name="VALUE-1">
+              <block type="SoldierStateBoolItem">
+                <field name="VALUE-0">SoldierStateBool</field>
+                <field name="VALUE-1">IsZooming</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="If">
+            <value name="VALUE-0">
+              <block type="Equals">
+                <value name="VALUE-0">
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="true"></mutation>
+                        <field name="OBJECTTYPE">Player</field>
+                        <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                        <value name="OBJECT">
+                          <block type="EventPlayer"></block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Number">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="SetVariable">
+                <value name="VALUE-0">
+                  <block type="variableReferenceBlock">
+                    <mutation isObjectVar="true"></mutation>
+                    <field name="OBJECTTYPE">Player</field>
+                    <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                    <value name="OBJECT">
+                      <block type="EventPlayer"></block>
+                    </value>
+                  </block>
+                </value>
+                <value name="VALUE-1">
+                  <block type="Add">
+                    <value name="VALUE-0">
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="true"></mutation>
+                            <field name="OBJECTTYPE">Player</field>
+                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">Main_MenuSelection</field>
+                            <value name="OBJECT">
+                              <block type="EventPlayer"></block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="VALUE-1">
+                      <block type="Number">
+                        <field name="NUM">1</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="subroutineInstanceBlock">
+            <field name="SUBROUTINE_NAME">menu_display</field>
+            <next>
+              <block type="Wait">
+                <value name="VALUE-0">
+                  <block type="Number">
+                    <field name="NUM">0.5</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
       </block>
     </next>
   </block>
-  <block type="EventPlayer" x="6953" y="5887"></block>
-  <block type="EventPlayer" x="6951" y="6006"></block>
-  <block type="If" x="4418" y="6619">
+  <block type="If" x="4568" y="7307">
     <value name="VALUE-0">
       <block type="Equals">
         <value name="VALUE-0">
@@ -6579,8 +6348,8 @@
           </block>
         </value>
         <value name="VALUE-1">
-          <block type="Text">
-            <field name="TEXT">assault</field>
+          <block type="Number">
+            <field name="NUM">1</field>
           </block>
         </value>
       </block>
