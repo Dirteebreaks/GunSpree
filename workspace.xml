@@ -1204,16 +1204,45 @@
                                               <block type="Message">
                                                 <value name="VALUE-0">
                                                   <block type="Text">
-                                                    <field name="TEXT">Round {}</field>
+                                                    <field name="TEXT">Kills - US: {} RU: {}</field>
                                                   </block>
                                                 </value>
                                                 <value name="VALUE-1">
                                                   <block type="GetVariable">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
-                                                        <mutation isObjectVar="false"></mutation>
-                                                        <field name="OBJECTTYPE">Global</field>
-                                                        <field name="VAR" id="yH}Gf0m1vKpe#@UxJvQG" variabletype="Global">Round</field>
+                                                        <mutation isObjectVar="true"></mutation>
+                                                        <field name="OBJECTTYPE">TeamId</field>
+                                                        <field name="VAR" id="f?Olbw!2:%@N79F}DjZc" variabletype="TeamId">Kills</field>
+                                                        <value name="OBJECT">
+                                                          <block type="GetTeamId">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">1</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="GetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="true"></mutation>
+                                                        <field name="OBJECTTYPE">TeamId</field>
+                                                        <field name="VAR" id="f?Olbw!2:%@N79F}DjZc" variabletype="TeamId">Kills</field>
+                                                        <value name="OBJECT">
+                                                          <block type="GetTeamId">
+                                                            <value name="VALUE-0">
+                                                              <block type="Number">
+                                                                <field name="NUM">2</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
                                                       </block>
                                                     </value>
                                                   </block>
@@ -1223,7 +1252,7 @@
                                             <value name="VALUE-1">
                                               <block type="CustomMessagesItem">
                                                 <field name="VALUE-0">CustomMessages</field>
-                                                <field name="VALUE-1">MessageText1</field>
+                                                <field name="VALUE-1">MessageText3</field>
                                               </block>
                                             </value>
                                             <value name="VALUE-2">
@@ -1237,45 +1266,16 @@
                                                   <block type="Message">
                                                     <value name="VALUE-0">
                                                       <block type="Text">
-                                                        <field name="TEXT">Kills - US: {} RU: {}</field>
+                                                        <field name="TEXT">Round {}</field>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
                                                       <block type="GetVariable">
                                                         <value name="VALUE-0">
                                                           <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="true"></mutation>
-                                                            <field name="OBJECTTYPE">TeamId</field>
-                                                            <field name="VAR" id="f?Olbw!2:%@N79F}DjZc" variabletype="TeamId">Kills</field>
-                                                            <value name="OBJECT">
-                                                              <block type="GetTeamId">
-                                                                <value name="VALUE-0">
-                                                                  <block type="Number">
-                                                                    <field name="NUM">1</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </value>
-                                                    <value name="VALUE-2">
-                                                      <block type="GetVariable">
-                                                        <value name="VALUE-0">
-                                                          <block type="variableReferenceBlock">
-                                                            <mutation isObjectVar="true"></mutation>
-                                                            <field name="OBJECTTYPE">TeamId</field>
-                                                            <field name="VAR" id="f?Olbw!2:%@N79F}DjZc" variabletype="TeamId">Kills</field>
-                                                            <value name="OBJECT">
-                                                              <block type="GetTeamId">
-                                                                <value name="VALUE-0">
-                                                                  <block type="Number">
-                                                                    <field name="NUM">2</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
+                                                            <mutation isObjectVar="false"></mutation>
+                                                            <field name="OBJECTTYPE">Global</field>
+                                                            <field name="VAR" id="yH}Gf0m1vKpe#@UxJvQG" variabletype="Global">Round</field>
                                                           </block>
                                                         </value>
                                                       </block>
@@ -12126,7 +12126,7 @@
       </block>
     </statement>
   </block>
-  <block type="EventPlayer" x="4556" y="5319"></block>
+  <block type="EventPlayer" x="4738" y="5277"></block>
   <block type="subroutineBlock" deletable="false" x="1408" y="12118">
     <field name="SUBROUTINE_NAME">end_of_round</field>
     <statement name="ACTIONS">
