@@ -1,11 +1,6 @@
 <xml xmlns="https://developers.google.com/blockly/xml">
   <variables>
     <variable type="TeamId" id="m4?$h[5c.p[/H,.I%`up">Players</variable>
-    <variable type="Player" id="cNiyBhppJPshP3lq/mO^">OtherTeamID</variable>
-    <variable type="Player" id="KH0v})@8(3TAT~@#l((k">MenuPage</variable>
-    <variable type="Player" id="ZN8TFN%Y!m(EP4/]g%Fl">MenuSelection</variable>
-    <variable type="Player" id="}wO{D+OubG]uOVM2W{M;">Position</variable>
-    <variable type="Player" id="JVB?l9x2,M_K*5;/_=v%">Creds</variable>
     <variable type="Global" id="/pZpJyhAR@OW3}T^@Z-_">MainMenu</variable>
     <variable type="Global" id="Q3zl_mZ$AMJ_6!*UZpt2">MenuSecondaries</variable>
     <variable type="Global" id="B0-P[B11fFz#9@)3YICL">MenuThrowables</variable>
@@ -38,6 +33,13 @@
     <variable type="Global" id="fh%y1(=vt+$sl*P{xl6/">SniperPrices</variable>
     <variable type="Global" id="vx;aE,^~6+*V%Y$A[oW^">ThrowablePrices</variable>
     <variable type="Global" id="f0_Vr[$B#XKfr2c6cLDa">GadgetPrices</variable>
+    <variable type="Global" id="yH}Gf0m1vKpe#@UxJvQG">Round</variable>
+    <variable type="Player" id="cNiyBhppJPshP3lq/mO^">OtherTeamID</variable>
+    <variable type="Player" id="KH0v})@8(3TAT~@#l((k">MenuPage</variable>
+    <variable type="Player" id="ZN8TFN%Y!m(EP4/]g%Fl">MenuSelection</variable>
+    <variable type="Player" id="}wO{D+OubG]uOVM2W{M;">Position</variable>
+    <variable type="Player" id="JVB?l9x2,M_K*5;/_=v%">Creds</variable>
+    <variable type="Player" id="z`jR$oky?(e:F|c3x=64">Loudout</variable>
   </variables>
   <block type="subroutineBlock" deletable="false" x="4358" y="60">
     <field name="SUBROUTINE_NAME">assign_teams</field>
@@ -378,10 +380,110 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="SpawnPlayer">
+                                      <block type="SetVariableAtIndex">
                                         <value name="VALUE-0">
-                                          <block type="EventPlayer"></block>
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">Player</field>
+                                            <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                            <value name="OBJECT">
+                                              <block type="EventPlayer"></block>
+                                            </value>
+                                          </block>
                                         </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="SecondaryWeaponsItem">
+                                            <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+                                            <field name="VALUE-1">MP443_ALX</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="SetVariableAtIndex">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="true"></mutation>
+                                                <field name="OBJECTTYPE">Player</field>
+                                                <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                                <value name="OBJECT">
+                                                  <block type="EventPlayer"></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="Number">
+                                                <field name="NUM">1</field>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="SecondaryWeaponsItem">
+                                                <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+                                                <field name="VALUE-1">MP443_ALX</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="SetVariableAtIndex">
+                                                <value name="VALUE-0">
+                                                  <block type="variableReferenceBlock">
+                                                    <mutation isObjectVar="true"></mutation>
+                                                    <field name="OBJECTTYPE">Player</field>
+                                                    <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                                    <value name="OBJECT">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-1">
+                                                  <block type="Number">
+                                                    <field name="NUM">2</field>
+                                                  </block>
+                                                </value>
+                                                <value name="VALUE-2">
+                                                  <block type="SecondaryWeaponsItem">
+                                                    <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+                                                    <field name="VALUE-1">MP443_ALX</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="SetVariableAtIndex">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="true"></mutation>
+                                                        <field name="OBJECTTYPE">Player</field>
+                                                        <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                                        <value name="OBJECT">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Number">
+                                                        <field name="NUM">3</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="SecondaryWeaponsItem">
+                                                        <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
+                                                        <field name="VALUE-1">MP443_ALX</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="SpawnPlayer">
+                                                        <value name="VALUE-0">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
@@ -400,72 +502,192 @@
                     <field name="NAME">New Rule</field>
                     <field name="EVENTTYPE">OnPlayerDeployed</field>
                     <statement name="ACTIONS">
-                      <block type="SetVariable">
+                      <block type="AddSoldierWeapon">
                         <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="true"></mutation>
-                            <field name="OBJECTTYPE">Player</field>
-                            <field name="VAR" id="}wO{D+OubG]uOVM2W{M;" variabletype="Player">Position</field>
-                            <value name="OBJECT">
-                              <block type="EventPlayer"></block>
-                            </value>
-                          </block>
+                          <block type="EventPlayer"></block>
                         </value>
                         <value name="VALUE-1">
-                          <block type="CreateVector" inline="false">
+                          <block type="ValueInArray">
                             <value name="VALUE-0">
-                              <block type="XComponentOf">
+                              <block type="GetVariable">
                                 <value name="VALUE-0">
-                                  <block type="GetSoldierState">
-                                    <value name="VALUE-0">
+                                  <block type="variableReferenceBlock">
+                                    <mutation isObjectVar="true"></mutation>
+                                    <field name="OBJECTTYPE">Player</field>
+                                    <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                    <value name="OBJECT">
                                       <block type="EventPlayer"></block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="SoldierStateVectorItem">
-                                        <field name="VALUE-0">SoldierStateVector</field>
-                                        <field name="VALUE-1">GetPosition</field>
-                                      </block>
                                     </value>
                                   </block>
                                 </value>
                               </block>
                             </value>
                             <value name="VALUE-1">
-                              <block type="YComponentOf">
-                                <value name="VALUE-0">
-                                  <block type="GetSoldierState">
-                                    <value name="VALUE-0">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="SoldierStateVectorItem">
-                                        <field name="VALUE-0">SoldierStateVector</field>
-                                        <field name="VALUE-1">GetPosition</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-2">
-                              <block type="ZComponentOf">
-                                <value name="VALUE-0">
-                                  <block type="GetSoldierState">
-                                    <value name="VALUE-0">
-                                      <block type="EventPlayer"></block>
-                                    </value>
-                                    <value name="VALUE-1">
-                                      <block type="SoldierStateVectorItem">
-                                        <field name="VALUE-0">SoldierStateVector</field>
-                                        <field name="VALUE-1">GetPosition</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
+                              <block type="Number">
+                                <field name="NUM">0</field>
                               </block>
                             </value>
                           </block>
                         </value>
+                        <next>
+                          <block type="AddSoldierWeapon">
+                            <value name="VALUE-0">
+                              <block type="EventPlayer"></block>
+                            </value>
+                            <value name="VALUE-1">
+                              <block type="ValueInArray">
+                                <value name="VALUE-0">
+                                  <block type="GetVariable">
+                                    <value name="VALUE-0">
+                                      <block type="variableReferenceBlock">
+                                        <mutation isObjectVar="true"></mutation>
+                                        <field name="OBJECTTYPE">Player</field>
+                                        <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                        <value name="OBJECT">
+                                          <block type="EventPlayer"></block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="AddSoldierWeapon">
+                                <value name="VALUE-0">
+                                  <block type="EventPlayer"></block>
+                                </value>
+                                <value name="VALUE-1">
+                                  <block type="ValueInArray">
+                                    <value name="VALUE-0">
+                                      <block type="GetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">Player</field>
+                                            <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                            <value name="OBJECT">
+                                              <block type="EventPlayer"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="Number">
+                                        <field name="NUM">2</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="AddSoldierWeapon">
+                                    <value name="VALUE-0">
+                                      <block type="EventPlayer"></block>
+                                    </value>
+                                    <value name="VALUE-1">
+                                      <block type="ValueInArray">
+                                        <value name="VALUE-0">
+                                          <block type="GetVariable">
+                                            <value name="VALUE-0">
+                                              <block type="variableReferenceBlock">
+                                                <mutation isObjectVar="true"></mutation>
+                                                <field name="OBJECTTYPE">Player</field>
+                                                <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                                <value name="OBJECT">
+                                                  <block type="EventPlayer"></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="Number">
+                                            <field name="NUM">3</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="SetVariable">
+                                        <value name="VALUE-0">
+                                          <block type="variableReferenceBlock">
+                                            <mutation isObjectVar="true"></mutation>
+                                            <field name="OBJECTTYPE">Player</field>
+                                            <field name="VAR" id="}wO{D+OubG]uOVM2W{M;" variabletype="Player">Position</field>
+                                            <value name="OBJECT">
+                                              <block type="EventPlayer"></block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="CreateVector" inline="false">
+                                            <value name="VALUE-0">
+                                              <block type="XComponentOf">
+                                                <value name="VALUE-0">
+                                                  <block type="GetSoldierState">
+                                                    <value name="VALUE-0">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="SoldierStateVectorItem">
+                                                        <field name="VALUE-0">SoldierStateVector</field>
+                                                        <field name="VALUE-1">GetPosition</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-1">
+                                              <block type="YComponentOf">
+                                                <value name="VALUE-0">
+                                                  <block type="GetSoldierState">
+                                                    <value name="VALUE-0">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="SoldierStateVectorItem">
+                                                        <field name="VALUE-0">SoldierStateVector</field>
+                                                        <field name="VALUE-1">GetPosition</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="VALUE-2">
+                                              <block type="ZComponentOf">
+                                                <value name="VALUE-0">
+                                                  <block type="GetSoldierState">
+                                                    <value name="VALUE-0">
+                                                      <block type="EventPlayer"></block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="SoldierStateVectorItem">
+                                                        <field name="VALUE-0">SoldierStateVector</field>
+                                                        <field name="VALUE-1">GetPosition</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
                       </block>
                     </statement>
                     <next>
@@ -1163,26 +1385,42 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="SetVariable">
+                                                  <block type="SetVariableAtIndex">
                                                     <value name="VALUE-0">
                                                       <block type="variableReferenceBlock">
                                                         <mutation isObjectVar="true"></mutation>
                                                         <field name="OBJECTTYPE">Player</field>
-                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                        <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                         <value name="OBJECT">
                                                           <block type="EventPlayer"></block>
                                                         </value>
                                                       </block>
                                                     </value>
                                                     <value name="VALUE-1">
-                                                      <block type="Subtract">
+                                                      <block type="Number">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-2">
+                                                      <block type="ValueInArray">
                                                         <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="false"></mutation>
+                                                                <field name="OBJECTTYPE">Global</field>
+                                                                <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
                                                           <block type="GetVariable">
                                                             <value name="VALUE-0">
                                                               <block type="variableReferenceBlock">
                                                                 <mutation isObjectVar="true"></mutation>
                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                 <value name="OBJECT">
                                                                   <block type="EventPlayer"></block>
                                                                 </value>
@@ -1190,28 +1428,60 @@
                                                             </value>
                                                           </block>
                                                         </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="ValueInArray">
-                                                            <value name="VALUE-0">
-                                                              <block type="GetVariable">
-                                                                <value name="VALUE-0">
-                                                                  <block type="variableReferenceBlock">
-                                                                    <mutation isObjectVar="false"></mutation>
-                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                    <field name="VAR" id="9=#u.WUEmnZmHYr02Ndk" variabletype="Global">SecondaryPrices</field>
-                                                                  </block>
-                                                                </value>
-                                                              </block>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="SetVariable">
+                                                        <value name="VALUE-0">
+                                                          <block type="variableReferenceBlock">
+                                                            <mutation isObjectVar="true"></mutation>
+                                                            <field name="OBJECTTYPE">Player</field>
+                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                            <value name="OBJECT">
+                                                              <block type="EventPlayer"></block>
                                                             </value>
-                                                            <value name="VALUE-1">
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Subtract">
+                                                            <value name="VALUE-0">
                                                               <block type="GetVariable">
                                                                 <value name="VALUE-0">
                                                                   <block type="variableReferenceBlock">
                                                                     <mutation isObjectVar="true"></mutation>
                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                     <value name="OBJECT">
                                                                       <block type="EventPlayer"></block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="ValueInArray">
+                                                                <value name="VALUE-0">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="9=#u.WUEmnZmHYr02Ndk" variabletype="Global">SecondaryPrices</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="true"></mutation>
+                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                        <value name="OBJECT">
+                                                                          <block type="EventPlayer"></block>
+                                                                        </value>
+                                                                      </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
@@ -1220,7 +1490,7 @@
                                                           </block>
                                                         </value>
                                                       </block>
-                                                    </value>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
@@ -1353,26 +1623,42 @@
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="SetVariable">
+                                                      <block type="SetVariableAtIndex">
                                                         <value name="VALUE-0">
                                                           <block type="variableReferenceBlock">
                                                             <mutation isObjectVar="true"></mutation>
                                                             <field name="OBJECTTYPE">Player</field>
-                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                            <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                             <value name="OBJECT">
                                                               <block type="EventPlayer"></block>
                                                             </value>
                                                           </block>
                                                         </value>
                                                         <value name="VALUE-1">
-                                                          <block type="Subtract">
+                                                          <block type="Number">
+                                                            <field name="NUM">0</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-2">
+                                                          <block type="ValueInArray">
                                                             <value name="VALUE-0">
+                                                              <block type="GetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="false"></mutation>
+                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                    <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
                                                               <block type="GetVariable">
                                                                 <value name="VALUE-0">
                                                                   <block type="variableReferenceBlock">
                                                                     <mutation isObjectVar="true"></mutation>
                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                     <value name="OBJECT">
                                                                       <block type="EventPlayer"></block>
                                                                     </value>
@@ -1380,28 +1666,60 @@
                                                                 </value>
                                                               </block>
                                                             </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="ValueInArray">
-                                                                <value name="VALUE-0">
-                                                                  <block type="GetVariable">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="variableReferenceBlock">
-                                                                        <mutation isObjectVar="false"></mutation>
-                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="=auwEVsor?Rp1/m%^Ds{" variabletype="Global">ArPrices</field>
-                                                                      </block>
-                                                                    </value>
-                                                                  </block>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="SetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="true"></mutation>
+                                                                <field name="OBJECTTYPE">Player</field>
+                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                <value name="OBJECT">
+                                                                  <block type="EventPlayer"></block>
                                                                 </value>
-                                                                <value name="VALUE-1">
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-1">
+                                                              <block type="Subtract">
+                                                                <value name="VALUE-0">
                                                                   <block type="GetVariable">
                                                                     <value name="VALUE-0">
                                                                       <block type="variableReferenceBlock">
                                                                         <mutation isObjectVar="true"></mutation>
                                                                         <field name="OBJECTTYPE">Player</field>
-                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                         <value name="OBJECT">
                                                                           <block type="EventPlayer"></block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="ValueInArray">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="=auwEVsor?Rp1/m%^Ds{" variabletype="Global">ArPrices</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="true"></mutation>
+                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                            <value name="OBJECT">
+                                                                              <block type="EventPlayer"></block>
+                                                                            </value>
+                                                                          </block>
                                                                         </value>
                                                                       </block>
                                                                     </value>
@@ -1410,7 +1728,7 @@
                                                               </block>
                                                             </value>
                                                           </block>
-                                                        </value>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
@@ -1543,26 +1861,42 @@
                                                           </block>
                                                         </value>
                                                         <next>
-                                                          <block type="SetVariable">
+                                                          <block type="SetVariableAtIndex">
                                                             <value name="VALUE-0">
                                                               <block type="variableReferenceBlock">
                                                                 <mutation isObjectVar="true"></mutation>
                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                 <value name="OBJECT">
                                                                   <block type="EventPlayer"></block>
                                                                 </value>
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-1">
-                                                              <block type="Subtract">
+                                                              <block type="Number">
+                                                                <field name="NUM">0</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="VALUE-2">
+                                                              <block type="ValueInArray">
                                                                 <value name="VALUE-0">
+                                                                  <block type="GetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="false"></mutation>
+                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                        <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
                                                                   <block type="GetVariable">
                                                                     <value name="VALUE-0">
                                                                       <block type="variableReferenceBlock">
                                                                         <mutation isObjectVar="true"></mutation>
                                                                         <field name="OBJECTTYPE">Player</field>
-                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                         <value name="OBJECT">
                                                                           <block type="EventPlayer"></block>
                                                                         </value>
@@ -1570,28 +1904,60 @@
                                                                     </value>
                                                                   </block>
                                                                 </value>
-                                                                <value name="VALUE-1">
-                                                                  <block type="ValueInArray">
-                                                                    <value name="VALUE-0">
-                                                                      <block type="GetVariable">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="variableReferenceBlock">
-                                                                            <mutation isObjectVar="false"></mutation>
-                                                                            <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="?6)3LX-nfd,ZP/-CX^;a" variabletype="Global">SMGPrices</field>
-                                                                          </block>
-                                                                        </value>
-                                                                      </block>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="SetVariable">
+                                                                <value name="VALUE-0">
+                                                                  <block type="variableReferenceBlock">
+                                                                    <mutation isObjectVar="true"></mutation>
+                                                                    <field name="OBJECTTYPE">Player</field>
+                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                    <value name="OBJECT">
+                                                                      <block type="EventPlayer"></block>
                                                                     </value>
-                                                                    <value name="VALUE-1">
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-1">
+                                                                  <block type="Subtract">
+                                                                    <value name="VALUE-0">
                                                                       <block type="GetVariable">
                                                                         <value name="VALUE-0">
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="true"></mutation>
                                                                             <field name="OBJECTTYPE">Player</field>
-                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                             <value name="OBJECT">
                                                                               <block type="EventPlayer"></block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="ValueInArray">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="?6)3LX-nfd,ZP/-CX^;a" variabletype="Global">SMGPrices</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="true"></mutation>
+                                                                                <field name="OBJECTTYPE">Player</field>
+                                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                <value name="OBJECT">
+                                                                                  <block type="EventPlayer"></block>
+                                                                                </value>
+                                                                              </block>
                                                                             </value>
                                                                           </block>
                                                                         </value>
@@ -1600,7 +1966,7 @@
                                                                   </block>
                                                                 </value>
                                                               </block>
-                                                            </value>
+                                                            </next>
                                                           </block>
                                                         </next>
                                                       </block>
@@ -1733,26 +2099,42 @@
                                                               </block>
                                                             </value>
                                                             <next>
-                                                              <block type="SetVariable">
+                                                              <block type="SetVariableAtIndex">
                                                                 <value name="VALUE-0">
                                                                   <block type="variableReferenceBlock">
                                                                     <mutation isObjectVar="true"></mutation>
                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                    <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                     <value name="OBJECT">
                                                                       <block type="EventPlayer"></block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
                                                                 <value name="VALUE-1">
-                                                                  <block type="Subtract">
+                                                                  <block type="Number">
+                                                                    <field name="NUM">0</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="VALUE-2">
+                                                                  <block type="ValueInArray">
                                                                     <value name="VALUE-0">
+                                                                      <block type="GetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="false"></mutation>
+                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                            <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
                                                                       <block type="GetVariable">
                                                                         <value name="VALUE-0">
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="true"></mutation>
                                                                             <field name="OBJECTTYPE">Player</field>
-                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                             <value name="OBJECT">
                                                                               <block type="EventPlayer"></block>
                                                                             </value>
@@ -1760,28 +2142,60 @@
                                                                         </value>
                                                                       </block>
                                                                     </value>
-                                                                    <value name="VALUE-1">
-                                                                      <block type="ValueInArray">
-                                                                        <value name="VALUE-0">
-                                                                          <block type="GetVariable">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="variableReferenceBlock">
-                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="kgj/h=+t{CPh*xQwQ~W1" variabletype="Global">ShotgunPrices</field>
-                                                                              </block>
-                                                                            </value>
-                                                                          </block>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="SetVariable">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="variableReferenceBlock">
+                                                                        <mutation isObjectVar="true"></mutation>
+                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                        <value name="OBJECT">
+                                                                          <block type="EventPlayer"></block>
                                                                         </value>
-                                                                        <value name="VALUE-1">
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-1">
+                                                                      <block type="Subtract">
+                                                                        <value name="VALUE-0">
                                                                           <block type="GetVariable">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="true"></mutation>
                                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                                 <value name="OBJECT">
                                                                                   <block type="EventPlayer"></block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="ValueInArray">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="kgj/h=+t{CPh*xQwQ~W1" variabletype="Global">ShotgunPrices</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="true"></mutation>
+                                                                                    <field name="OBJECTTYPE">Player</field>
+                                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                    <value name="OBJECT">
+                                                                                      <block type="EventPlayer"></block>
+                                                                                    </value>
+                                                                                  </block>
                                                                                 </value>
                                                                               </block>
                                                                             </value>
@@ -1790,7 +2204,7 @@
                                                                       </block>
                                                                     </value>
                                                                   </block>
-                                                                </value>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
@@ -1923,26 +2337,42 @@
                                                                   </block>
                                                                 </value>
                                                                 <next>
-                                                                  <block type="SetVariable">
+                                                                  <block type="SetVariableAtIndex">
                                                                     <value name="VALUE-0">
                                                                       <block type="variableReferenceBlock">
                                                                         <mutation isObjectVar="true"></mutation>
                                                                         <field name="OBJECTTYPE">Player</field>
-                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                        <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                         <value name="OBJECT">
                                                                           <block type="EventPlayer"></block>
                                                                         </value>
                                                                       </block>
                                                                     </value>
                                                                     <value name="VALUE-1">
-                                                                      <block type="Subtract">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">0</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="VALUE-2">
+                                                                      <block type="ValueInArray">
                                                                         <value name="VALUE-0">
+                                                                          <block type="GetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
                                                                           <block type="GetVariable">
                                                                             <value name="VALUE-0">
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="true"></mutation>
                                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                                 <value name="OBJECT">
                                                                                   <block type="EventPlayer"></block>
                                                                                 </value>
@@ -1950,28 +2380,60 @@
                                                                             </value>
                                                                           </block>
                                                                         </value>
-                                                                        <value name="VALUE-1">
-                                                                          <block type="ValueInArray">
-                                                                            <value name="VALUE-0">
-                                                                              <block type="GetVariable">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="variableReferenceBlock">
-                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                    <field name="VAR" id="WLqz35LvzlB=%c$g?2bD" variabletype="Global">LMGPrices</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                              </block>
+                                                                      </block>
+                                                                    </value>
+                                                                    <next>
+                                                                      <block type="SetVariable">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="variableReferenceBlock">
+                                                                            <mutation isObjectVar="true"></mutation>
+                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                            <value name="OBJECT">
+                                                                              <block type="EventPlayer"></block>
                                                                             </value>
-                                                                            <value name="VALUE-1">
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-1">
+                                                                          <block type="Subtract">
+                                                                            <value name="VALUE-0">
                                                                               <block type="GetVariable">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="true"></mutation>
                                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                                     <value name="OBJECT">
                                                                                       <block type="EventPlayer"></block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="ValueInArray">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="GetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                        <field name="VAR" id="WLqz35LvzlB=%c$g?2bD" variabletype="Global">LMGPrices</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="GetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                        <value name="OBJECT">
+                                                                                          <block type="EventPlayer"></block>
+                                                                                        </value>
+                                                                                      </block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
@@ -1980,7 +2442,7 @@
                                                                           </block>
                                                                         </value>
                                                                       </block>
-                                                                    </value>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
@@ -2113,26 +2575,42 @@
                                                                       </block>
                                                                     </value>
                                                                     <next>
-                                                                      <block type="SetVariable">
+                                                                      <block type="SetVariableAtIndex">
                                                                         <value name="VALUE-0">
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="true"></mutation>
                                                                             <field name="OBJECTTYPE">Player</field>
-                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                            <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                             <value name="OBJECT">
                                                                               <block type="EventPlayer"></block>
                                                                             </value>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-1">
-                                                                          <block type="Subtract">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">0</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <value name="VALUE-2">
+                                                                          <block type="ValueInArray">
                                                                             <value name="VALUE-0">
+                                                                              <block type="GetVariable">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="variableReferenceBlock">
+                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                    <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
                                                                               <block type="GetVariable">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="true"></mutation>
                                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                                     <value name="OBJECT">
                                                                                       <block type="EventPlayer"></block>
                                                                                     </value>
@@ -2140,28 +2618,60 @@
                                                                                 </value>
                                                                               </block>
                                                                             </value>
-                                                                            <value name="VALUE-1">
-                                                                              <block type="ValueInArray">
-                                                                                <value name="VALUE-0">
-                                                                                  <block type="GetVariable">
-                                                                                    <value name="VALUE-0">
-                                                                                      <block type="variableReferenceBlock">
-                                                                                        <mutation isObjectVar="false"></mutation>
-                                                                                        <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id=";EPj~O3ijqrj,|%t}!B}" variabletype="Global">DMRPrices</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                  </block>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="SetVariable">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="true"></mutation>
+                                                                                <field name="OBJECTTYPE">Player</field>
+                                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                <value name="OBJECT">
+                                                                                  <block type="EventPlayer"></block>
                                                                                 </value>
-                                                                                <value name="VALUE-1">
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-1">
+                                                                              <block type="Subtract">
+                                                                                <value name="VALUE-0">
                                                                                   <block type="GetVariable">
                                                                                     <value name="VALUE-0">
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="true"></mutation>
                                                                                         <field name="OBJECTTYPE">Player</field>
-                                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                                         <value name="OBJECT">
                                                                                           <block type="EventPlayer"></block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="ValueInArray">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id=";EPj~O3ijqrj,|%t}!B}" variabletype="Global">DMRPrices</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                            <value name="OBJECT">
+                                                                                              <block type="EventPlayer"></block>
+                                                                                            </value>
+                                                                                          </block>
                                                                                         </value>
                                                                                       </block>
                                                                                     </value>
@@ -2170,7 +2680,7 @@
                                                                               </block>
                                                                             </value>
                                                                           </block>
-                                                                        </value>
+                                                                        </next>
                                                                       </block>
                                                                     </next>
                                                                   </block>
@@ -2328,11 +2838,23 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="AddSoldierWeapon">
+                                                                          <block type="SetVariableAtIndex">
                                                                             <value name="VALUE-0">
-                                                                              <block type="EventPlayer"></block>
+                                                                              <block type="variableReferenceBlock">
+                                                                                <mutation isObjectVar="true"></mutation>
+                                                                                <field name="OBJECTTYPE">Player</field>
+                                                                                <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
+                                                                                <value name="OBJECT">
+                                                                                  <block type="EventPlayer"></block>
+                                                                                </value>
+                                                                              </block>
                                                                             </value>
                                                                             <value name="VALUE-1">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">0</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <value name="VALUE-2">
                                                                               <block type="ValueInArray">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="GetVariable">
@@ -2340,7 +2862,7 @@
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="owhkd8-S;TpL:W6w7hM-" variabletype="Global">Snipers</field>
+                                                                                        <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -2361,6 +2883,42 @@
                                                                                 </value>
                                                                               </block>
                                                                             </value>
+                                                                            <next>
+                                                                              <block type="AddSoldierWeapon">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="EventPlayer"></block>
+                                                                                </value>
+                                                                                <value name="VALUE-1">
+                                                                                  <block type="ValueInArray">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="owhkd8-S;TpL:W6w7hM-" variabletype="Global">Snipers</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                            <value name="OBJECT">
+                                                                                              <block type="EventPlayer"></block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -2493,26 +3051,42 @@
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="SetVariable">
+                                                                              <block type="SetVariableAtIndex">
                                                                                 <value name="VALUE-0">
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="true"></mutation>
                                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                    <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                                     <value name="OBJECT">
                                                                                       <block type="EventPlayer"></block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="VALUE-1">
-                                                                                  <block type="Subtract">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">2</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="VALUE-2">
+                                                                                  <block type="ValueInArray">
                                                                                     <value name="VALUE-0">
+                                                                                      <block type="GetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                            <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
                                                                                       <block type="GetVariable">
                                                                                         <value name="VALUE-0">
                                                                                           <block type="variableReferenceBlock">
                                                                                             <mutation isObjectVar="true"></mutation>
                                                                                             <field name="OBJECTTYPE">Player</field>
-                                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                            <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                                             <value name="OBJECT">
                                                                                               <block type="EventPlayer"></block>
                                                                                             </value>
@@ -2520,28 +3094,60 @@
                                                                                         </value>
                                                                                       </block>
                                                                                     </value>
-                                                                                    <value name="VALUE-1">
-                                                                                      <block type="ValueInArray">
-                                                                                        <value name="VALUE-0">
-                                                                                          <block type="GetVariable">
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="variableReferenceBlock">
-                                                                                                <mutation isObjectVar="false"></mutation>
-                                                                                                <field name="OBJECTTYPE">Global</field>
-                                                                                                <field name="VAR" id="vx;aE,^~6+*V%Y$A[oW^" variabletype="Global">ThrowablePrices</field>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                          </block>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="SetVariable">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="variableReferenceBlock">
+                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                        <value name="OBJECT">
+                                                                                          <block type="EventPlayer"></block>
                                                                                         </value>
-                                                                                        <value name="VALUE-1">
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-1">
+                                                                                      <block type="Subtract">
+                                                                                        <value name="VALUE-0">
                                                                                           <block type="GetVariable">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="variableReferenceBlock">
                                                                                                 <mutation isObjectVar="true"></mutation>
                                                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                                                 <value name="OBJECT">
                                                                                                   <block type="EventPlayer"></block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="ValueInArray">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="GetVariable">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="variableReferenceBlock">
+                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                    <field name="VAR" id="vx;aE,^~6+*V%Y$A[oW^" variabletype="Global">ThrowablePrices</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="GetVariable">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="variableReferenceBlock">
+                                                                                                    <mutation isObjectVar="true"></mutation>
+                                                                                                    <field name="OBJECTTYPE">Player</field>
+                                                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                                    <value name="OBJECT">
+                                                                                                      <block type="EventPlayer"></block>
+                                                                                                    </value>
+                                                                                                  </block>
                                                                                                 </value>
                                                                                               </block>
                                                                                             </value>
@@ -2550,7 +3156,7 @@
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
-                                                                                </value>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
@@ -2683,26 +3289,42 @@
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
-                                                                                  <block type="SetVariable">
+                                                                                  <block type="SetVariableAtIndex">
                                                                                     <value name="VALUE-0">
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="true"></mutation>
                                                                                         <field name="OBJECTTYPE">Player</field>
-                                                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                        <field name="VAR" id="z`jR$oky?(e:F|c3x=64" variabletype="Player">Loudout</field>
                                                                                         <value name="OBJECT">
                                                                                           <block type="EventPlayer"></block>
                                                                                         </value>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="VALUE-1">
-                                                                                      <block type="Subtract">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">3</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="VALUE-2">
+                                                                                      <block type="ValueInArray">
                                                                                         <value name="VALUE-0">
+                                                                                          <block type="GetVariable">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="variableReferenceBlock">
+                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                <field name="VAR" id="ib5q9$qr6iL~xFAYCfqR" variabletype="Global">SecondaryWeapons</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
                                                                                           <block type="GetVariable">
                                                                                             <value name="VALUE-0">
                                                                                               <block type="variableReferenceBlock">
                                                                                                 <mutation isObjectVar="true"></mutation>
                                                                                                 <field name="OBJECTTYPE">Player</field>
-                                                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
                                                                                                 <value name="OBJECT">
                                                                                                   <block type="EventPlayer"></block>
                                                                                                 </value>
@@ -2710,28 +3332,60 @@
                                                                                             </value>
                                                                                           </block>
                                                                                         </value>
-                                                                                        <value name="VALUE-1">
-                                                                                          <block type="ValueInArray">
-                                                                                            <value name="VALUE-0">
-                                                                                              <block type="GetVariable">
-                                                                                                <value name="VALUE-0">
-                                                                                                  <block type="variableReferenceBlock">
-                                                                                                    <mutation isObjectVar="false"></mutation>
-                                                                                                    <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id="f0_Vr[$B#XKfr2c6cLDa" variabletype="Global">GadgetPrices</field>
-                                                                                                  </block>
-                                                                                                </value>
-                                                                                              </block>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="SetVariable">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="variableReferenceBlock">
+                                                                                            <mutation isObjectVar="true"></mutation>
+                                                                                            <field name="OBJECTTYPE">Player</field>
+                                                                                            <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                                            <value name="OBJECT">
+                                                                                              <block type="EventPlayer"></block>
                                                                                             </value>
-                                                                                            <value name="VALUE-1">
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="VALUE-1">
+                                                                                          <block type="Subtract">
+                                                                                            <value name="VALUE-0">
                                                                                               <block type="GetVariable">
                                                                                                 <value name="VALUE-0">
                                                                                                   <block type="variableReferenceBlock">
                                                                                                     <mutation isObjectVar="true"></mutation>
                                                                                                     <field name="OBJECTTYPE">Player</field>
-                                                                                                    <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                                                                                                     <value name="OBJECT">
                                                                                                       <block type="EventPlayer"></block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="ValueInArray">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="GetVariable">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                        <field name="VAR" id="f0_Vr[$B#XKfr2c6cLDa" variabletype="Global">GadgetPrices</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="GetVariable">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                                                                                                        <value name="OBJECT">
+                                                                                                          <block type="EventPlayer"></block>
+                                                                                                        </value>
+                                                                                                      </block>
                                                                                                     </value>
                                                                                                   </block>
                                                                                                 </value>
@@ -2740,7 +3394,7 @@
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
-                                                                                    </value>
+                                                                                    </next>
                                                                                   </block>
                                                                                 </next>
                                                                               </block>
@@ -3154,6 +3808,50 @@
                                                 </value>
                                               </block>
                                             </statement>
+                                            <next>
+                                              <block type="ruleBlock">
+                                                <mutation isOnGoingEvent="false"></mutation>
+                                                <field name="NAME">New Rule</field>
+                                                <field name="EVENTTYPE">OnPlayerEarnedKill</field>
+                                                <statement name="ACTIONS">
+                                                  <block type="SetVariable">
+                                                    <value name="VALUE-0">
+                                                      <block type="variableReferenceBlock">
+                                                        <mutation isObjectVar="true"></mutation>
+                                                        <field name="OBJECTTYPE">Player</field>
+                                                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                        <value name="OBJECT">
+                                                          <block type="EventPlayer"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="VALUE-1">
+                                                      <block type="Add">
+                                                        <value name="VALUE-0">
+                                                          <block type="GetVariable">
+                                                            <value name="VALUE-0">
+                                                              <block type="variableReferenceBlock">
+                                                                <mutation isObjectVar="true"></mutation>
+                                                                <field name="OBJECTTYPE">Player</field>
+                                                                <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
+                                                                <value name="OBJECT">
+                                                                  <block type="EventPlayer"></block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <value name="VALUE-1">
+                                                          <block type="Number">
+                                                            <field name="NUM">50</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </statement>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
