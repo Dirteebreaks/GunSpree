@@ -4382,11 +4382,14 @@
                                                                     <field name="NUM">2</field>
                                                                   </block>
                                                                 </value>
+                                                                <value name="VALUE-3">
+                                                                  <block type="EventPlayer"></block>
+                                                                </value>
                                                                 <next>
                                                                   <block type="Wait">
                                                                     <value name="VALUE-0">
                                                                       <block type="Number">
-                                                                        <field name="NUM">1</field>
+                                                                        <field name="NUM">2</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
