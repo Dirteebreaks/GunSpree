@@ -5,7 +5,7 @@
     <variable type="Global" id="/pZpJyhAR@OW3}T^@Z-_">MainMenu</variable>
     <variable type="Global" id="Q3zl_mZ$AMJ_6!*UZpt2">MenuSecondaries</variable>
     <variable type="Global" id="B0-P[B11fFz#9@)3YICL">MenuThrowables</variable>
-    <variable type="Global" id="ZM#LdR9Y%C1vd[`m_y+E">MenuGedgets</variable>
+    <variable type="Global" id="ZM#LdR9Y%C1vd[`m_y+E">MenuGadgets</variable>
     <variable type="Global" id="T5XgEdLKD`tUnTWb!oKt">MenuAR</variable>
     <variable type="Global" id="bvmyZ7*RG$3poy1n5[Eq">MenuSMG</variable>
     <variable type="Global" id="i^#VZBN$UuhN,6m}BTrA">MenuShotgun</variable>
@@ -3035,81 +3035,12 @@
                                               <block type="subroutineInstanceBlock">
                                                 <field name="SUBROUTINE_NAME">menu_display</field>
                                                 <next>
-                                                  <block type="If">
+                                                  <block type="Wait">
                                                     <value name="VALUE-0">
-                                                      <block type="And">
-                                                        <value name="VALUE-0">
-                                                          <block type="GetSoldierState">
-                                                            <value name="VALUE-0">
-                                                              <block type="EventPlayer"></block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="SoldierStateBoolItem">
-                                                                <field name="VALUE-0">SoldierStateBool</field>
-                                                                <field name="VALUE-1">IsAlive</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetSoldierState">
-                                                            <value name="VALUE-0">
-                                                              <block type="EventPlayer"></block>
-                                                            </value>
-                                                            <value name="VALUE-1">
-                                                              <block type="SoldierStateBoolItem">
-                                                                <field name="VALUE-0">SoldierStateBool</field>
-                                                                <field name="VALUE-1">IsAISoldier</field>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
+                                                      <block type="Number">
+                                                        <field name="NUM">0.01</field>
                                                       </block>
                                                     </value>
-                                                    <statement name="DO">
-                                                      <block type="Teleport">
-                                                        <value name="VALUE-0">
-                                                          <block type="EventPlayer"></block>
-                                                        </value>
-                                                        <value name="VALUE-1">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="true"></mutation>
-                                                                <field name="OBJECTTYPE">Player</field>
-                                                                <field name="VAR" id="}wO{D+OubG]uOVM2W{M;" variabletype="Player">Position</field>
-                                                                <value name="OBJECT">
-                                                                  <block type="EventPlayer"></block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                        <value name="VALUE-2">
-                                                          <block type="GetVariable">
-                                                            <value name="VALUE-0">
-                                                              <block type="variableReferenceBlock">
-                                                                <mutation isObjectVar="true"></mutation>
-                                                                <field name="OBJECTTYPE">Player</field>
-                                                                <field name="VAR" id="1U!h51g)!l@K=[v:4(,-" variabletype="Player">yaw</field>
-                                                                <value name="OBJECT">
-                                                                  <block type="EventPlayer"></block>
-                                                                </value>
-                                                              </block>
-                                                            </value>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </statement>
-                                                    <next>
-                                                      <block type="Wait">
-                                                        <value name="VALUE-0">
-                                                          <block type="Number">
-                                                            <field name="NUM">0.01</field>
-                                                          </block>
-                                                        </value>
-                                                      </block>
-                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
@@ -6231,7 +6162,7 @@
                                                                                                       <block type="variableReferenceBlock">
                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
@@ -8752,7 +8683,7 @@
                                                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                         <value name="VALUE-1">
@@ -8764,7 +8695,7 @@
                                                                                                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                             <value name="VALUE-1">
@@ -8783,7 +8714,7 @@
                                                                                                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                 <value name="VALUE-1">
@@ -8802,7 +8733,7 @@
                                                                                                                                                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                     <value name="VALUE-1">
@@ -8821,7 +8752,7 @@
                                                                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                                         <value name="VALUE-1">
@@ -8840,7 +8771,7 @@
                                                                                                                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                                             <value name="VALUE-1">
@@ -8859,7 +8790,7 @@
                                                                                                                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                                 <value name="VALUE-1">
@@ -8878,7 +8809,7 @@
                                                                                                                                                                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                                     <value name="VALUE-1">
@@ -8897,7 +8828,7 @@
                                                                                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                                                         <value name="VALUE-1">
@@ -8916,7 +8847,7 @@
                                                                                                                                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                                                             <value name="VALUE-1">
@@ -8935,7 +8866,7 @@
                                                                                                                                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                                                 <value name="VALUE-1">
@@ -8954,7 +8885,7 @@
                                                                                                                                                                                                                                                                                                       <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                                       </block>
                                                                                                                                                                                                                                                                                                     </value>
                                                                                                                                                                                                                                                                                                     <value name="VALUE-1">
@@ -8973,7 +8904,7 @@
                                                                                                                                                                                                                                                                                                           <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                                           </block>
                                                                                                                                                                                                                                                                                                         </value>
                                                                                                                                                                                                                                                                                                         <value name="VALUE-1">
@@ -8992,7 +8923,7 @@
                                                                                                                                                                                                                                                                                                               <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                                                                                                                                                                                                                                                               </block>
                                                                                                                                                                                                                                                                                                             </value>
                                                                                                                                                                                                                                                                                                             <value name="VALUE-1">
@@ -9011,7 +8942,7 @@
                                                                                                                                                                                                                                                                                                                   <block type="variableReferenceBlock">
                                                                                                                                                                                                                                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                                                                                                                                                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                                                                                                                                                                                                                                    <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                                                                                                                                                                                                                                                    <field name="VAR" id="jPnP5|kS7PNmg)fwwJNm" variabletype="Global">MenuItems</field>
                                                                                                                                                                                                                                                                                                                   </block>
                                                                                                                                                                                                                                                                                                                 </value>
                                                                                                                                                                                                                                                                                                                 <value name="VALUE-1">
@@ -13577,7 +13508,7 @@
                                                                       <block type="variableReferenceBlock">
                                                                         <mutation isObjectVar="false"></mutation>
                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
@@ -13660,7 +13591,7 @@
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="false"></mutation>
                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                            <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                           </block>
                                                                         </value>
                                                                       </block>
@@ -13761,7 +13692,7 @@
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
+                                                                                <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGadgets</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -13873,6 +13804,73 @@
             </next>
           </block>
         </next>
+      </block>
+    </statement>
+  </block>
+  <block type="If" x="3876" y="5675">
+    <value name="VALUE-0">
+      <block type="And">
+        <value name="VALUE-0">
+          <block type="GetSoldierState">
+            <value name="VALUE-0">
+              <block type="EventPlayer"></block>
+            </value>
+            <value name="VALUE-1">
+              <block type="SoldierStateBoolItem">
+                <field name="VALUE-0">SoldierStateBool</field>
+                <field name="VALUE-1">IsAlive</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="GetSoldierState">
+            <value name="VALUE-0">
+              <block type="EventPlayer"></block>
+            </value>
+            <value name="VALUE-1">
+              <block type="SoldierStateBoolItem">
+                <field name="VALUE-0">SoldierStateBool</field>
+                <field name="VALUE-1">IsAISoldier</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="Teleport">
+        <value name="VALUE-0">
+          <block type="EventPlayer"></block>
+        </value>
+        <value name="VALUE-1">
+          <block type="GetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="true"></mutation>
+                <field name="OBJECTTYPE">Player</field>
+                <field name="VAR" id="}wO{D+OubG]uOVM2W{M;" variabletype="Player">Position</field>
+                <value name="OBJECT">
+                  <block type="EventPlayer"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-2">
+          <block type="GetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="true"></mutation>
+                <field name="OBJECTTYPE">Player</field>
+                <field name="VAR" id="1U!h51g)!l@K=[v:4(,-" variabletype="Player">yaw</field>
+                <value name="OBJECT">
+                  <block type="EventPlayer"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
       </block>
     </statement>
   </block>
