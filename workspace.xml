@@ -14216,7 +14216,7 @@
               </block>
             </statement>
             <next>
-              <block type="ShowNotificationMessage">
+              <block type="ShowEventGameModeMessage">
                 <value name="VALUE-0">
                   <block type="Message">
                     <value name="VALUE-0">
