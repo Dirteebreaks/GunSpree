@@ -1619,6 +1619,15 @@
                                                                     <field name="VALUE-1">SecondaryWeapon</field>
                                                                   </block>
                                                                 </value>
+                                                                <next>
+                                                                  <block type="Wait">
+                                                                    <value name="VALUE-0">
+                                                                      <block type="Number">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
                                                               </block>
                                                             </next>
                                                           </block>
@@ -1929,6 +1938,15 @@
                                                                         <field name="VALUE-1">PrimaryWeapon</field>
                                                                       </block>
                                                                     </value>
+                                                                    <next>
+                                                                      <block type="Wait">
+                                                                        <value name="VALUE-0">
+                                                                          <block type="Number">
+                                                                            <field name="NUM">1</field>
+                                                                          </block>
+                                                                        </value>
+                                                                      </block>
+                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
@@ -2239,6 +2257,15 @@
                                                                             <field name="VALUE-1">PrimaryWeapon</field>
                                                                           </block>
                                                                         </value>
+                                                                        <next>
+                                                                          <block type="Wait">
+                                                                            <value name="VALUE-0">
+                                                                              <block type="Number">
+                                                                                <field name="NUM">1</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
                                                                       </block>
                                                                     </next>
                                                                   </block>
@@ -2549,6 +2576,15 @@
                                                                                 <field name="VALUE-1">PrimaryWeapon</field>
                                                                               </block>
                                                                             </value>
+                                                                            <next>
+                                                                              <block type="Wait">
+                                                                                <value name="VALUE-0">
+                                                                                  <block type="Number">
+                                                                                    <field name="NUM">1</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                              </block>
+                                                                            </next>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -2859,6 +2895,15 @@
                                                                                     <field name="VALUE-1">PrimaryWeapon</field>
                                                                                   </block>
                                                                                 </value>
+                                                                                <next>
+                                                                                  <block type="Wait">
+                                                                                    <value name="VALUE-0">
+                                                                                      <block type="Number">
+                                                                                        <field name="NUM">1</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
                                                                               </block>
                                                                             </next>
                                                                           </block>
@@ -3169,6 +3214,15 @@
                                                                                         <field name="VALUE-1">PrimaryWeapon</field>
                                                                                       </block>
                                                                                     </value>
+                                                                                    <next>
+                                                                                      <block type="Wait">
+                                                                                        <value name="VALUE-0">
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                      </block>
+                                                                                    </next>
                                                                                   </block>
                                                                                 </next>
                                                                               </block>
@@ -3469,16 +3523,25 @@
                                                                                       <block type="EventPlayer"></block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="ForceSwitchInventory">
+                                                                                      <block type="Wait">
                                                                                         <value name="VALUE-0">
-                                                                                          <block type="EventPlayer"></block>
-                                                                                        </value>
-                                                                                        <value name="VALUE-1">
-                                                                                          <block type="InventorySlotsItem">
-                                                                                            <field name="VALUE-0">InventorySlots</field>
-                                                                                            <field name="VALUE-1">PrimaryWeapon</field>
+                                                                                          <block type="Number">
+                                                                                            <field name="NUM">1</field>
                                                                                           </block>
                                                                                         </value>
+                                                                                        <next>
+                                                                                          <block type="ForceSwitchInventory">
+                                                                                            <value name="VALUE-0">
+                                                                                              <block type="EventPlayer"></block>
+                                                                                            </value>
+                                                                                            <value name="VALUE-1">
+                                                                                              <block type="InventorySlotsItem">
+                                                                                                <field name="VALUE-0">InventorySlots</field>
+                                                                                                <field name="VALUE-1">PrimaryWeapon</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </next>
                                                                                       </block>
                                                                                     </next>
                                                                                   </block>
@@ -3789,6 +3852,15 @@
                                                                                                 <field name="VALUE-1">Throwable</field>
                                                                                               </block>
                                                                                             </value>
+                                                                                            <next>
+                                                                                              <block type="Wait">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">1</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
@@ -4299,6 +4371,15 @@
                                                                                                     </value>
                                                                                                   </block>
                                                                                                 </statement>
+                                                                                                <next>
+                                                                                                  <block type="Wait">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">1</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
