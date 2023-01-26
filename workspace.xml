@@ -7968,12 +7968,16 @@
               </block>
             </value>
             <value name="VALUE-2">
-              <block type="GetVariable">
+              <block type="RoundToInteger">
                 <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="false"></mutation>
-                    <field name="OBJECTTYPE">Global</field>
-                    <field name="VAR" id="VV:8@[hEKCfxI$1_DjtL" variabletype="Global">BuyMenuTimer</field>
+                  <block type="GetVariable">
+                    <value name="VALUE-0">
+                      <block type="variableReferenceBlock">
+                        <mutation isObjectVar="false"></mutation>
+                        <field name="OBJECTTYPE">Global</field>
+                        <field name="VAR" id="VV:8@[hEKCfxI$1_DjtL" variabletype="Global">BuyMenuTimer</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
               </block>
