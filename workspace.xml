@@ -1812,7 +1812,7 @@
                                                                           <block type="variableReferenceBlock">
                                                                             <mutation isObjectVar="false"></mutation>
                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                            <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                            <field name="VAR" id="T5XgEdLKD`tUnTWb!oKt" variabletype="Global">MenuAR</field>
                                                                           </block>
                                                                         </value>
                                                                       </block>
@@ -2146,7 +2146,7 @@
                                                                               <block type="variableReferenceBlock">
                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                <field name="VAR" id="bvmyZ7*RG$3poy1n5[Eq" variabletype="Global">MenuSMG</field>
                                                                               </block>
                                                                             </value>
                                                                           </block>
@@ -2480,7 +2480,7 @@
                                                                                   <block type="variableReferenceBlock">
                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                    <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                    <field name="VAR" id="i^#VZBN$UuhN,6m}BTrA" variabletype="Global">MenuShotgun</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
@@ -2814,7 +2814,7 @@
                                                                                       <block type="variableReferenceBlock">
                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                        <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                        <field name="VAR" id="~7RiR(K|bVjvP}nJL??s" variabletype="Global">MenuLMG</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -3148,7 +3148,7 @@
                                                                                           <block type="variableReferenceBlock">
                                                                                             <mutation isObjectVar="false"></mutation>
                                                                                             <field name="OBJECTTYPE">Global</field>
-                                                                                            <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                            <field name="VAR" id="ccL(5SVo/SaD~1wZoH+|" variabletype="Global">MenuDMR</field>
                                                                                           </block>
                                                                                         </value>
                                                                                       </block>
@@ -3482,7 +3482,7 @@
                                                                                               <block type="variableReferenceBlock">
                                                                                                 <mutation isObjectVar="false"></mutation>
                                                                                                 <field name="OBJECTTYPE">Global</field>
-                                                                                                <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                                <field name="VAR" id="QA*S|[lNP;fQh~JbRO?B" variabletype="Global">MenuSniper</field>
                                                                                               </block>
                                                                                             </value>
                                                                                           </block>
@@ -3816,7 +3816,7 @@
                                                                                                   <block type="variableReferenceBlock">
                                                                                                     <mutation isObjectVar="false"></mutation>
                                                                                                     <field name="OBJECTTYPE">Global</field>
-                                                                                                    <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                                    <field name="VAR" id="B0-P[B11fFz#9@)3YICL" variabletype="Global">MenuThrowables</field>
                                                                                                   </block>
                                                                                                 </value>
                                                                                               </block>
@@ -4137,7 +4137,7 @@
                                                                                                       <block type="variableReferenceBlock">
                                                                                                         <mutation isObjectVar="false"></mutation>
                                                                                                         <field name="OBJECTTYPE">Global</field>
-                                                                                                        <field name="VAR" id="Q3zl_mZ$AMJ_6!*UZpt2" variabletype="Global">MenuSecondaries</field>
+                                                                                                        <field name="VAR" id="ZM#LdR9Y%C1vd[`m_y+E" variabletype="Global">MenuGedgets</field>
                                                                                                       </block>
                                                                                                     </value>
                                                                                                   </block>
