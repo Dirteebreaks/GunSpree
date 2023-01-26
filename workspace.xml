@@ -438,8 +438,8 @@
                                             </value>
                                             <value name="VALUE-2">
                                               <block type="SecondaryWeaponsItem">
-                                                <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-                                                <field name="VALUE-1">MP443_ALX</field>
+                                                <field name="VALUE-0">SecondaryWeaponsGrafton</field>
+                                                <field name="VALUE-1">P38</field>
                                               </block>
                                             </value>
                                             <next>
@@ -461,8 +461,8 @@
                                                 </value>
                                                 <value name="VALUE-2">
                                                   <block type="SecondaryWeaponsItem">
-                                                    <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-                                                    <field name="VALUE-1">MP443_ALX</field>
+                                                    <field name="VALUE-0">SecondaryWeaponsGrafton</field>
+                                                    <field name="VALUE-1">P38</field>
                                                   </block>
                                                 </value>
                                                 <next>
@@ -484,8 +484,8 @@
                                                     </value>
                                                     <value name="VALUE-2">
                                                       <block type="SecondaryWeaponsItem">
-                                                        <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-                                                        <field name="VALUE-1">MP443_ALX</field>
+                                                        <field name="VALUE-0">SecondaryWeaponsGrafton</field>
+                                                        <field name="VALUE-1">P38</field>
                                                       </block>
                                                     </value>
                                                     <next>
@@ -507,8 +507,8 @@
                                                         </value>
                                                         <value name="VALUE-2">
                                                           <block type="SecondaryWeaponsItem">
-                                                            <field name="VALUE-0">SecondaryWeaponsAlexandria</field>
-                                                            <field name="VALUE-1">MP443_ALX</field>
+                                                            <field name="VALUE-0">SecondaryWeaponsGrafton</field>
+                                                            <field name="VALUE-1">P38</field>
                                                           </block>
                                                         </value>
                                                         <next>
@@ -4477,7 +4477,7 @@
                                                                         <value name="VALUE-1">
                                                                           <block type="CustomMessagesItem">
                                                                             <field name="VALUE-0">CustomMessages</field>
-                                                                            <field name="VALUE-1">MessageText1</field>
+                                                                            <field name="VALUE-1">MessageText4</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-2">
@@ -4501,7 +4501,7 @@
                                                                         <value name="VALUE-1">
                                                                           <block type="CustomMessagesItem">
                                                                             <field name="VALUE-0">CustomMessages</field>
-                                                                            <field name="VALUE-1">MessageText1</field>
+                                                                            <field name="VALUE-1">MessageText4</field>
                                                                           </block>
                                                                         </value>
                                                                         <value name="VALUE-2">
@@ -8302,7 +8302,7 @@
                 <value name="VALUE-1">
                   <block type="CustomMessagesItem">
                     <field name="VALUE-0">CustomMessages</field>
-                    <field name="VALUE-1">MessageText2</field>
+                    <field name="VALUE-1">MessageText1</field>
                   </block>
                 </value>
                 <value name="VALUE-2">
@@ -8365,7 +8365,7 @@
                     <value name="VALUE-1">
                       <block type="CustomMessagesItem">
                         <field name="VALUE-0">CustomMessages</field>
-                        <field name="VALUE-1">MessageText3</field>
+                        <field name="VALUE-1">MessageText2</field>
                       </block>
                     </value>
                     <value name="VALUE-2">
@@ -8428,7 +8428,7 @@
                         <value name="VALUE-1">
                           <block type="CustomMessagesItem">
                             <field name="VALUE-0">CustomMessages</field>
-                            <field name="VALUE-1">MessageText4</field>
+                            <field name="VALUE-1">MessageText3</field>
                           </block>
                         </value>
                         <value name="VALUE-2">
