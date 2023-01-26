@@ -216,7 +216,7 @@
     <statement name="RULES">
       <block type="ruleBlock">
         <mutation isOnGoingEvent="true"></mutation>
-        <field name="NAME">New Rule</field>
+        <field name="NAME">Rule 1</field>
         <field name="EVENTTYPE">Ongoing</field>
         <field name="OBJECTTYPE">Global</field>
         <statement name="ACTIONS">
@@ -319,7 +319,7 @@
         <next>
           <block type="ruleBlock">
             <mutation isOnGoingEvent="false"></mutation>
-            <field name="NAME">New Rule</field>
+            <field name="NAME">Rule 2</field>
             <field name="EVENTTYPE">OnGameModeStarted</field>
             <statement name="ACTIONS">
               <block type="SetVariable">
@@ -340,7 +340,7 @@
             <next>
               <block type="ruleBlock">
                 <mutation isOnGoingEvent="false"></mutation>
-                <field name="NAME">New Rule</field>
+                <field name="NAME">Rule 3</field>
                 <field name="EVENTTYPE">OnPlayerJoinGame</field>
                 <statement name="ACTIONS">
                   <block type="subroutineInstanceBlock">
@@ -540,7 +540,7 @@
                 <next>
                   <block type="ruleBlock">
                     <mutation isOnGoingEvent="false"></mutation>
-                    <field name="NAME">New Rule</field>
+                    <field name="NAME">Rule 4</field>
                     <field name="EVENTTYPE">OnPlayerDeployed</field>
                     <statement name="ACTIONS">
                       <block type="AddSoldierWeapon">
@@ -734,7 +734,7 @@
                     <next>
                       <block type="ruleBlock">
                         <mutation isOnGoingEvent="true"></mutation>
-                        <field name="NAME">New Rule</field>
+                        <field name="NAME">Rule 5</field>
                         <field name="EVENTTYPE">Ongoing</field>
                         <field name="OBJECTTYPE">Player</field>
                         <statement name="CONDITIONS">
@@ -1086,7 +1086,7 @@
                         <next>
                           <block type="ruleBlock">
                             <mutation isOnGoingEvent="true"></mutation>
-                            <field name="NAME"></field>
+                            <field name="NAME">Rule 6</field>
                             <field name="EVENTTYPE">Ongoing</field>
                             <field name="OBJECTTYPE">Player</field>
                             <statement name="CONDITIONS">
@@ -1153,7 +1153,7 @@
                             <next>
                               <block type="ruleBlock">
                                 <mutation isOnGoingEvent="true"></mutation>
-                                <field name="NAME">New Rule</field>
+                                <field name="NAME">Rule 7</field>
                                 <field name="EVENTTYPE">Ongoing</field>
                                 <field name="OBJECTTYPE">Player</field>
                                 <statement name="CONDITIONS">
@@ -3510,7 +3510,7 @@
                                 <next>
                                   <block type="ruleBlock">
                                     <mutation isOnGoingEvent="true"></mutation>
-                                    <field name="NAME">New Rule</field>
+                                    <field name="NAME">Rule 8</field>
                                     <field name="EVENTTYPE">Ongoing</field>
                                     <field name="OBJECTTYPE">Player</field>
                                     <statement name="CONDITIONS">
@@ -3630,7 +3630,7 @@
                                     <next>
                                       <block type="ruleBlock">
                                         <mutation isOnGoingEvent="true"></mutation>
-                                        <field name="NAME">New Rule</field>
+                                        <field name="NAME">Rule 9</field>
                                         <field name="EVENTTYPE">Ongoing</field>
                                         <field name="OBJECTTYPE">Player</field>
                                         <statement name="CONDITIONS">
@@ -3762,7 +3762,7 @@
                                         <next>
                                           <block type="ruleBlock">
                                             <mutation isOnGoingEvent="true"></mutation>
-                                            <field name="NAME">New Rule</field>
+                                            <field name="NAME">Rule 10</field>
                                             <field name="EVENTTYPE">Ongoing</field>
                                             <field name="OBJECTTYPE">Player</field>
                                             <statement name="CONDITIONS">
@@ -3896,7 +3896,7 @@
                                             <next>
                                               <block type="ruleBlock">
                                                 <mutation isOnGoingEvent="false"></mutation>
-                                                <field name="NAME">New Rule</field>
+                                                <field name="NAME">Rule 11</field>
                                                 <field name="EVENTTYPE">OnPlayerEarnedKill</field>
                                                 <statement name="ACTIONS">
                                                   <block type="DisplayCustomNotificationMessage">
@@ -4037,7 +4037,7 @@
                                                 <next>
                                                   <block type="ruleBlock">
                                                     <mutation isOnGoingEvent="true"></mutation>
-                                                    <field name="NAME">New Rule</field>
+                                                    <field name="NAME">Rule 12</field>
                                                     <field name="EVENTTYPE">Ongoing</field>
                                                     <field name="OBJECTTYPE">Global</field>
                                                     <statement name="CONDITIONS">
@@ -4297,7 +4297,7 @@
                                                     <next>
                                                       <block type="ruleBlock">
                                                         <mutation isOnGoingEvent="true"></mutation>
-                                                        <field name="NAME">New Rule</field>
+                                                        <field name="NAME">Rule 13</field>
                                                         <field name="EVENTTYPE">Ongoing</field>
                                                         <field name="OBJECTTYPE">Player</field>
                                                         <statement name="CONDITIONS">
@@ -4395,7 +4395,7 @@
                                                         <next>
                                                           <block type="ruleBlock">
                                                             <mutation isOnGoingEvent="true"></mutation>
-                                                            <field name="NAME">New Rule</field>
+                                                            <field name="NAME">Rule 14</field>
                                                             <field name="EVENTTYPE">Ongoing</field>
                                                             <field name="OBJECTTYPE">Global</field>
                                                             <statement name="CONDITIONS">
