@@ -7852,19 +7852,10 @@
                               </block>
                             </statement>
                             <statement name="ACTIONS">
-                              <block type="EnableInputRestriction">
+                              <block type="Wait">
                                 <value name="VALUE-0">
-                                  <block type="EventPlayer"></block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="RestrictedInputsItem">
-                                    <field name="VALUE-0">RestrictedInputs</field>
-                                    <field name="VALUE-1">MoveLeftRight</field>
-                                  </block>
-                                </value>
-                                <value name="VALUE-2">
-                                  <block type="Boolean">
-                                    <field name="BOOL">TRUE</field>
+                                  <block type="Number">
+                                    <field name="NUM">1</field>
                                   </block>
                                 </value>
                                 <next>
@@ -7875,7 +7866,7 @@
                                     <value name="VALUE-1">
                                       <block type="RestrictedInputsItem">
                                         <field name="VALUE-0">RestrictedInputs</field>
-                                        <field name="VALUE-1">MoveForwardBack</field>
+                                        <field name="VALUE-1">MoveLeftRight</field>
                                       </block>
                                     </value>
                                     <value name="VALUE-2">
@@ -7884,10 +7875,19 @@
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="Wait">
+                                      <block type="EnableInputRestriction">
                                         <value name="VALUE-0">
-                                          <block type="Number">
-                                            <field name="NUM">3</field>
+                                          <block type="EventPlayer"></block>
+                                        </value>
+                                        <value name="VALUE-1">
+                                          <block type="RestrictedInputsItem">
+                                            <field name="VALUE-0">RestrictedInputs</field>
+                                            <field name="VALUE-1">MoveForwardBack</field>
+                                          </block>
+                                        </value>
+                                        <value name="VALUE-2">
+                                          <block type="Boolean">
+                                            <field name="BOOL">TRUE</field>
                                           </block>
                                         </value>
                                         <next>
@@ -12349,7 +12349,32 @@
       </block>
     </statement>
   </block>
-  <block type="subroutineBlock" deletable="false" x="2427" y="2539">
+  <block type="DisplayCustomNotificationMessage" x="9092" y="2206">
+    <value name="VALUE-0">
+      <block type="Message">
+        <value name="VALUE-0">
+          <block type="Text">
+            <field name="TEXT">Crouch = down, Jump = up, Fire = select, Zoom = back</field>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="VALUE-1">
+      <block type="CustomMessagesItem">
+        <field name="VALUE-0">CustomMessages</field>
+        <field name="VALUE-1">MessageText1</field>
+      </block>
+    </value>
+    <value name="VALUE-2">
+      <block type="Number">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <value name="VALUE-3">
+      <block type="EventPlayer"></block>
+    </value>
+  </block>
+  <block type="subroutineBlock" deletable="false" x="2258" y="2927">
     <field name="SUBROUTINE_NAME">create_weapon_prices</field>
     <statement name="ACTIONS">
       <block type="SetVariable">
@@ -13633,31 +13658,6 @@
       </block>
     </statement>
   </block>
-  <block type="DisplayCustomNotificationMessage" x="9092" y="2206">
-    <value name="VALUE-0">
-      <block type="Message">
-        <value name="VALUE-0">
-          <block type="Text">
-            <field name="TEXT">Crouch = down, Jump = up, Fire = select, Zoom = back</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="CustomMessagesItem">
-        <field name="VALUE-0">CustomMessages</field>
-        <field name="VALUE-1">MessageText1</field>
-      </block>
-    </value>
-    <value name="VALUE-2">
-      <block type="Number">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-    <value name="VALUE-3">
-      <block type="EventPlayer"></block>
-    </value>
-  </block>
   <block type="subroutineBlock" deletable="false" x="966" y="11918">
     <field name="SUBROUTINE_NAME">end_of_round</field>
     <statement name="ACTIONS">
@@ -14438,7 +14438,7 @@
       </block>
     </statement>
   </block>
-  <block type="If" x="6703" y="13462">
+  <block type="If" x="7205" y="14624">
     <mutation else="1"></mutation>
     <value name="VALUE-0">
       <block type="Or" inline="false">
