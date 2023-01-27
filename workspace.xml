@@ -7191,7 +7191,7 @@
                             </value>
                             <value name="VALUE-1">
                               <block type="Number">
-                                <field name="NUM">5000</field>
+                                <field name="NUM">300</field>
                               </block>
                             </value>
                             <next>
