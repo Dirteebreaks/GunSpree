@@ -214,6 +214,59 @@
       </block>
     </statement>
   </block>
+  <block type="DisplayCustomNotificationMessage" x="11342" y="1193">
+    <value name="VALUE-0">
+      <block type="Message">
+        <value name="VALUE-0">
+          <block type="Text">
+            <field name="TEXT">MenuPage {} - menuSelection {}</field>
+          </block>
+        </value>
+        <value name="VALUE-1">
+          <block type="GetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="true"></mutation>
+                <field name="OBJECTTYPE">Player</field>
+                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                <value name="OBJECT">
+                  <block type="EventPlayer"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <value name="VALUE-2">
+          <block type="GetVariable">
+            <value name="VALUE-0">
+              <block type="variableReferenceBlock">
+                <mutation isObjectVar="true"></mutation>
+                <field name="OBJECTTYPE">Player</field>
+                <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
+                <value name="OBJECT">
+                  <block type="EventPlayer"></block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </value>
+    <value name="VALUE-1">
+      <block type="CustomMessagesItem">
+        <field name="VALUE-0">CustomMessages</field>
+        <field name="VALUE-1">MessageText4</field>
+      </block>
+    </value>
+    <value name="VALUE-2">
+      <block type="Number">
+        <field name="NUM">1</field>
+      </block>
+    </value>
+    <value name="VALUE-3">
+      <block type="EventPlayer"></block>
+    </value>
+  </block>
   <block type="subroutineBlock" deletable="false" x="11266" y="1358">
     <field name="SUBROUTINE_NAME">menu_display</field>
     <statement name="ACTIONS">
@@ -222,36 +275,7 @@
           <block type="Message">
             <value name="VALUE-0">
               <block type="Text">
-                <field name="TEXT">Your Creds {} - time {}</field>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="GetVariable">
-                <value name="VALUE-0">
-                  <block type="variableReferenceBlock">
-                    <mutation isObjectVar="true"></mutation>
-                    <field name="OBJECTTYPE">Player</field>
-                    <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
-                    <value name="OBJECT">
-                      <block type="EventPlayer"></block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-2">
-              <block type="RoundToInteger">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="VV:8@[hEKCfxI$1_DjtL" variabletype="Global">BuyMenuTimer</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
+                <field name="TEXT">Crouch = down, Jump = up, Fire = select, Zoom = back</field>
               </block>
             </value>
           </block>
@@ -259,7 +283,7 @@
         <value name="VALUE-1">
           <block type="CustomMessagesItem">
             <field name="VALUE-0">CustomMessages</field>
-            <field name="VALUE-1">HeaderText</field>
+            <field name="VALUE-1">MessageText1</field>
           </block>
         </value>
         <value name="VALUE-2">
@@ -276,7 +300,7 @@
               <block type="Message">
                 <value name="VALUE-0">
                   <block type="Text">
-                    <field name="TEXT">MenuPage {} - menuSelection {}</field>
+                    <field name="TEXT">Your Creds {} - time {}</field>
                   </block>
                 </value>
                 <value name="VALUE-1">
@@ -285,7 +309,7 @@
                       <block type="variableReferenceBlock">
                         <mutation isObjectVar="true"></mutation>
                         <field name="OBJECTTYPE">Player</field>
-                        <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                        <field name="VAR" id="JVB?l9x2,M_K*5;/_=v%" variabletype="Player">Creds</field>
                         <value name="OBJECT">
                           <block type="EventPlayer"></block>
                         </value>
@@ -294,14 +318,15 @@
                   </block>
                 </value>
                 <value name="VALUE-2">
-                  <block type="GetVariable">
+                  <block type="RoundToInteger">
                     <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="true"></mutation>
-                        <field name="OBJECTTYPE">Player</field>
-                        <field name="VAR" id="ZN8TFN%Y!m(EP4/]g%Fl" variabletype="Player">MenuSelection</field>
-                        <value name="OBJECT">
-                          <block type="EventPlayer"></block>
+                      <block type="GetVariable">
+                        <value name="VALUE-0">
+                          <block type="variableReferenceBlock">
+                            <mutation isObjectVar="false"></mutation>
+                            <field name="OBJECTTYPE">Global</field>
+                            <field name="VAR" id="VV:8@[hEKCfxI$1_DjtL" variabletype="Global">BuyMenuTimer</field>
+                          </block>
                         </value>
                       </block>
                     </value>
@@ -312,7 +337,7 @@
             <value name="VALUE-1">
               <block type="CustomMessagesItem">
                 <field name="VALUE-0">CustomMessages</field>
-                <field name="VALUE-1">MessageText4</field>
+                <field name="VALUE-1">HeaderText</field>
               </block>
             </value>
             <value name="VALUE-2">
@@ -11220,12 +11245,263 @@
                                                                                           <block type="EventPlayer"></block>
                                                                                         </value>
                                                                                         <next>
-                                                                                          <block type="Wait">
+                                                                                          <block type="If">
+                                                                                            <mutation else="1"></mutation>
                                                                                             <value name="VALUE-0">
-                                                                                              <block type="Number">
-                                                                                                <field name="NUM">1</field>
+                                                                                              <block type="Or" inline="false">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="HasInventory">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="EventPlayer"></block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="ValueInArray">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="GetVariable">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="Number">
+                                                                                                            <field name="NUM">0</field>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="Or" inline="false">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="HasInventory">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="EventPlayer"></block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="ValueInArray">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="GetVariable">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="variableReferenceBlock">
+                                                                                                                    <mutation isObjectVar="false"></mutation>
+                                                                                                                    <field name="OBJECTTYPE">Global</field>
+                                                                                                                    <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="Number">
+                                                                                                                <field name="NUM">1</field>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Or" inline="false">
+                                                                                                        <value name="VALUE-0">
+                                                                                                          <block type="HasInventory">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="EventPlayer"></block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="ValueInArray">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="GetVariable">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="variableReferenceBlock">
+                                                                                                                        <mutation isObjectVar="false"></mutation>
+                                                                                                                        <field name="OBJECTTYPE">Global</field>
+                                                                                                                        <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="Number">
+                                                                                                                    <field name="NUM">2</field>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                        <value name="VALUE-1">
+                                                                                                          <block type="Or" inline="false">
+                                                                                                            <value name="VALUE-0">
+                                                                                                              <block type="HasInventory">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="EventPlayer"></block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="ValueInArray">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="GetVariable">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="variableReferenceBlock">
+                                                                                                                            <mutation isObjectVar="false"></mutation>
+                                                                                                                            <field name="OBJECTTYPE">Global</field>
+                                                                                                                            <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="Number">
+                                                                                                                        <field name="NUM">3</field>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                            <value name="VALUE-1">
+                                                                                                              <block type="Or" inline="false">
+                                                                                                                <value name="VALUE-0">
+                                                                                                                  <block type="HasInventory">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="EventPlayer"></block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="ValueInArray">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="GetVariable">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">4</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                                <value name="VALUE-1">
+                                                                                                                  <block type="HasInventory">
+                                                                                                                    <value name="VALUE-0">
+                                                                                                                      <block type="EventPlayer"></block>
+                                                                                                                    </value>
+                                                                                                                    <value name="VALUE-1">
+                                                                                                                      <block type="ValueInArray">
+                                                                                                                        <value name="VALUE-0">
+                                                                                                                          <block type="GetVariable">
+                                                                                                                            <value name="VALUE-0">
+                                                                                                                              <block type="variableReferenceBlock">
+                                                                                                                                <mutation isObjectVar="false"></mutation>
+                                                                                                                                <field name="OBJECTTYPE">Global</field>
+                                                                                                                                <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
+                                                                                                                              </block>
+                                                                                                                            </value>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                        <value name="VALUE-1">
+                                                                                                                          <block type="Number">
+                                                                                                                            <field name="NUM">5</field>
+                                                                                                                          </block>
+                                                                                                                        </value>
+                                                                                                                      </block>
+                                                                                                                    </value>
+                                                                                                                  </block>
+                                                                                                                </value>
+                                                                                                              </block>
+                                                                                                            </value>
+                                                                                                          </block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </value>
                                                                                               </block>
                                                                                             </value>
+                                                                                            <statement name="DO">
+                                                                                              <block type="ForceSwitchInventory">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="EventPlayer"></block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="InventorySlotsItem">
+                                                                                                    <field name="VALUE-0">InventorySlots</field>
+                                                                                                    <field name="VALUE-1">OpenGadget</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="SetVariable">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                                        <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                                                                                                        <value name="OBJECT">
+                                                                                                          <block type="EventPlayer"></block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">0</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <statement name="ELSE">
+                                                                                              <block type="ForceSwitchInventory">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="EventPlayer"></block>
+                                                                                                </value>
+                                                                                                <value name="VALUE-1">
+                                                                                                  <block type="InventorySlotsItem">
+                                                                                                    <field name="VALUE-0">InventorySlots</field>
+                                                                                                    <field name="VALUE-1">CharacterGadget</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                                <next>
+                                                                                                  <block type="SetVariable">
+                                                                                                    <value name="VALUE-0">
+                                                                                                      <block type="variableReferenceBlock">
+                                                                                                        <mutation isObjectVar="true"></mutation>
+                                                                                                        <field name="OBJECTTYPE">Player</field>
+                                                                                                        <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
+                                                                                                        <value name="OBJECT">
+                                                                                                          <block type="EventPlayer"></block>
+                                                                                                        </value>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                    <value name="VALUE-1">
+                                                                                                      <block type="Number">
+                                                                                                        <field name="NUM">0</field>
+                                                                                                      </block>
+                                                                                                    </value>
+                                                                                                  </block>
+                                                                                                </next>
+                                                                                              </block>
+                                                                                            </statement>
+                                                                                            <next>
+                                                                                              <block type="Wait">
+                                                                                                <value name="VALUE-0">
+                                                                                                  <block type="Number">
+                                                                                                    <field name="NUM">1</field>
+                                                                                                  </block>
+                                                                                                </value>
+                                                                                              </block>
+                                                                                            </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
@@ -11600,7 +11876,7 @@
                                                               </block>
                                                             </value>
                                                             <value name="VALUE-1">
-                                                              <block type="Add">
+                                                              <block type="Subtract">
                                                                 <value name="VALUE-0">
                                                                   <block type="ValueInArray">
                                                                     <value name="VALUE-0">
@@ -12348,31 +12624,6 @@
         </next>
       </block>
     </statement>
-  </block>
-  <block type="DisplayCustomNotificationMessage" x="9092" y="2206">
-    <value name="VALUE-0">
-      <block type="Message">
-        <value name="VALUE-0">
-          <block type="Text">
-            <field name="TEXT">Crouch = down, Jump = up, Fire = select, Zoom = back</field>
-          </block>
-        </value>
-      </block>
-    </value>
-    <value name="VALUE-1">
-      <block type="CustomMessagesItem">
-        <field name="VALUE-0">CustomMessages</field>
-        <field name="VALUE-1">MessageText1</field>
-      </block>
-    </value>
-    <value name="VALUE-2">
-      <block type="Number">
-        <field name="NUM">1</field>
-      </block>
-    </value>
-    <value name="VALUE-3">
-      <block type="EventPlayer"></block>
-    </value>
   </block>
   <block type="subroutineBlock" deletable="false" x="2258" y="2927">
     <field name="SUBROUTINE_NAME">create_weapon_prices</field>
@@ -14433,255 +14684,6 @@
                 </next>
               </block>
             </next>
-          </block>
-        </next>
-      </block>
-    </statement>
-  </block>
-  <block type="If" x="7205" y="14624">
-    <mutation else="1"></mutation>
-    <value name="VALUE-0">
-      <block type="Or" inline="false">
-        <value name="VALUE-0">
-          <block type="HasInventory">
-            <value name="VALUE-0">
-              <block type="EventPlayer"></block>
-            </value>
-            <value name="VALUE-1">
-              <block type="ValueInArray">
-                <value name="VALUE-0">
-                  <block type="GetVariable">
-                    <value name="VALUE-0">
-                      <block type="variableReferenceBlock">
-                        <mutation isObjectVar="false"></mutation>
-                        <field name="OBJECTTYPE">Global</field>
-                        <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Number">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-        <value name="VALUE-1">
-          <block type="Or" inline="false">
-            <value name="VALUE-0">
-              <block type="HasInventory">
-                <value name="VALUE-0">
-                  <block type="EventPlayer"></block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="ValueInArray">
-                    <value name="VALUE-0">
-                      <block type="GetVariable">
-                        <value name="VALUE-0">
-                          <block type="variableReferenceBlock">
-                            <mutation isObjectVar="false"></mutation>
-                            <field name="OBJECTTYPE">Global</field>
-                            <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Number">
-                        <field name="NUM">1</field>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Or" inline="false">
-                <value name="VALUE-0">
-                  <block type="HasInventory">
-                    <value name="VALUE-0">
-                      <block type="EventPlayer"></block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="ValueInArray">
-                        <value name="VALUE-0">
-                          <block type="GetVariable">
-                            <value name="VALUE-0">
-                              <block type="variableReferenceBlock">
-                                <mutation isObjectVar="false"></mutation>
-                                <field name="OBJECTTYPE">Global</field>
-                                <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="Number">
-                            <field name="NUM">2</field>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-                <value name="VALUE-1">
-                  <block type="Or" inline="false">
-                    <value name="VALUE-0">
-                      <block type="HasInventory">
-                        <value name="VALUE-0">
-                          <block type="EventPlayer"></block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="ValueInArray">
-                            <value name="VALUE-0">
-                              <block type="GetVariable">
-                                <value name="VALUE-0">
-                                  <block type="variableReferenceBlock">
-                                    <mutation isObjectVar="false"></mutation>
-                                    <field name="OBJECTTYPE">Global</field>
-                                    <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="Number">
-                                <field name="NUM">3</field>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                    <value name="VALUE-1">
-                      <block type="Or" inline="false">
-                        <value name="VALUE-0">
-                          <block type="HasInventory">
-                            <value name="VALUE-0">
-                              <block type="EventPlayer"></block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="ValueInArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">4</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                        <value name="VALUE-1">
-                          <block type="HasInventory">
-                            <value name="VALUE-0">
-                              <block type="EventPlayer"></block>
-                            </value>
-                            <value name="VALUE-1">
-                              <block type="ValueInArray">
-                                <value name="VALUE-0">
-                                  <block type="GetVariable">
-                                    <value name="VALUE-0">
-                                      <block type="variableReferenceBlock">
-                                        <mutation isObjectVar="false"></mutation>
-                                        <field name="OBJECTTYPE">Global</field>
-                                        <field name="VAR" id="c_HPvfKiq9apgzY|}ktB" variabletype="Global">Gadgets</field>
-                                      </block>
-                                    </value>
-                                  </block>
-                                </value>
-                                <value name="VALUE-1">
-                                  <block type="Number">
-                                    <field name="NUM">5</field>
-                                  </block>
-                                </value>
-                              </block>
-                            </value>
-                          </block>
-                        </value>
-                      </block>
-                    </value>
-                  </block>
-                </value>
-              </block>
-            </value>
-          </block>
-        </value>
-      </block>
-    </value>
-    <statement name="DO">
-      <block type="ForceSwitchInventory">
-        <value name="VALUE-0">
-          <block type="EventPlayer"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="InventorySlotsItem">
-            <field name="VALUE-0">InventorySlots</field>
-            <field name="VALUE-1">OpenGadget</field>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
-          </block>
-        </next>
-      </block>
-    </statement>
-    <statement name="ELSE">
-      <block type="ForceSwitchInventory">
-        <value name="VALUE-0">
-          <block type="EventPlayer"></block>
-        </value>
-        <value name="VALUE-1">
-          <block type="InventorySlotsItem">
-            <field name="VALUE-0">InventorySlots</field>
-            <field name="VALUE-1">CharacterGadget</field>
-          </block>
-        </value>
-        <next>
-          <block type="SetVariable">
-            <value name="VALUE-0">
-              <block type="variableReferenceBlock">
-                <mutation isObjectVar="true"></mutation>
-                <field name="OBJECTTYPE">Player</field>
-                <field name="VAR" id="KH0v})@8(3TAT~@#l((k" variabletype="Player">MenuPage</field>
-                <value name="OBJECT">
-                  <block type="EventPlayer"></block>
-                </value>
-              </block>
-            </value>
-            <value name="VALUE-1">
-              <block type="Number">
-                <field name="NUM">0</field>
-              </block>
-            </value>
           </block>
         </next>
       </block>
